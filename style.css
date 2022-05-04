@@ -1,0 +1,192 @@
+*{
+font-family: "Inter", sans-serif;
+margin: 0px;
+padding: 0px;
+}
+body{
+  background-color: #131313;
+  overflow: auto;
+}
+body::-webkit-scrollbar{
+  width: 0px;
+}
+
+.head{
+  background-color:  #000000;
+  border-bottom: 1px solid  #322179;
+}
+.head_title{
+  margin: 45px;
+  font-size: 60px;
+  color: #D2D2D2;
+  font-weight: 550;
+  display: inline-block;
+  cursor: pointer;
+}
+.head_menu{
+  color: #D2D2D2;
+  margin-top: 35px;
+  margin-right: 40px;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  float: right;
+}
+.head_themes{
+    margin: 35px;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    outline: none;
+    border: 1px solid #554595;
+    background:radial-gradient(closest-side,#554595,#423189);
+    border-radius: 100%;
+    display: inline-block;
+    float: right;
+  }
+.head_themes_icons{
+    width: 55px;
+    height: 55px;
+    color: #D2D2D2;
+  }
+.head_writes{
+  display: inline;
+  font-size: 55px;
+  color: #D2D2D2;
+  font-weight: 500;
+  cursor: pointer;
+}
+.head_button{
+  margin: 10px;
+  margin-top: 50px;
+  margin-bottom: 200px;
+  font-size: 40px;
+  color: #D2D2D2;
+  cursor: pointer;
+  outline: none;
+  background-color: inherit;
+  border-radius: 100px;
+  border: 2px solid #322179;
+  padding: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.content{
+  height: 1400px;
+  padding: 25px;
+}
+.content_title{
+  text-align: center;
+  margin: 80px;
+  font-size: 50px;
+  color: #D2D2D2;
+  font-weight: 550;
+  cursor: pointer;
+}
+.things{
+  background-color: #000000;
+  margin-bottom: 30px;
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid #322179;
+}
+.things_topic{
+  margin-top: 10px;
+  background-color: #322179;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #D2D2D2;
+  font-weight: 550;
+  border-radius: 10px;
+}
+.things_write{
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-align: left;
+  font-size: 45px;
+  color: #D2D2D2;
+}
+.things_name{
+  margin-top: 40px;
+  font-size: 35px;
+  color: #D2D2D2;
+  font-weight: 550;
+  display: inline-block;
+}
+.things_dates{
+  color: #FFFFFF;
+  margin-top: 40px;
+  font-size: 35px;
+  float: right;
+  margin-left: 10px;
+  display: inline-block;
+}
+.things_hourI{
+  color: #FFFFFF;
+  margin-top: 43px;
+  width: 40px;
+  height: 40px;
+  float: right;
+  display: inline-block;
+}
+.things_hour{
+  color: #FFFFFF;
+  margin-top: 40px;
+  font-size: 35px;
+  margin-right: 10px;
+  float: right;
+  display: inline-block;
+}
+
+.footer{
+  background-color:  #000000;
+  border-top: 1px solid  #322179;
+  padding: 40px;
+  margin-bottom: 0px;
+}
+.footer_title{
+  margin: 10px;
+  font-size: 55px;
+  color: #D2D2D2;
+  font-weight: 550;
+  cursor: pointer;
+}
+.footer_writes{
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #D2D2D2;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+.footer_options{
+  font-size: 27px;
+  color: #D2D2D2;
+  margin: 30px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer_socials{
+  margin-top: 40px;
+  margin-bottom: 70px;
+}
+.footer_socials_icons{
+  color: #322179;
+  margin: 10px;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+
+}
+.footer_copyrights{
+  font-size: 25px;
+  color: #D2D2D2;
+  display: inline-block;
+  cursor: pointer;
+}
