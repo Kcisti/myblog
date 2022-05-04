@@ -17,9 +17,10 @@ body::-webkit-scrollbar{
 }
 .head_title{
   margin: 45px;
-  font-size: 60px;
+  font-size: 62px;
   color: #D2D2D2;
   font-weight: 550;
+  text-transform: uppercase;
   display: inline-block;
   cursor: pointer;
 }
@@ -45,8 +46,8 @@ body::-webkit-scrollbar{
     float: right;
   }
 .head_themes_icons{
-    width: 55px;
-    height: 55px;
+    width: 63px;
+    height: 63px;
     color: #D2D2D2;
   }
 .head_writes{
@@ -156,21 +157,7 @@ body::-webkit-scrollbar{
   color: #D2D2D2;
   font-weight: 550;
   cursor: pointer;
-}
-.footer_writes{
-  margin-bottom: 30px;
-  font-size: 40px;
-  color: #D2D2D2;
-  font-weight: 500;
-  display: inline-block;
-  cursor: pointer;
-}
-.footer_options{
-  font-size: 27px;
-  color: #D2D2D2;
-  margin: 30px;
-  text-decoration: underline;
-  cursor: pointer;
+  text-transform: uppercase;
 }
 .footer_socials{
   margin-top: 40px;
