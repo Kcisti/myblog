@@ -36,6 +36,7 @@ const DOM = {
 
 function openStudio(){
   document.getElementById('WSTUDIO').style.display="block";
+  document.getElementById('check').style.display="block";
   document.getElementById('room').style.display="none";
   document.getElementById('message_form').style.display="none";
 }
@@ -53,7 +54,7 @@ function accessG(){
     setTimeout(function(){
       document.getElementById('check').style.display="none";
       document.getElementById('message_form').style.display="block";
-    },500)
+    },700)
   } else {
     document.getElementById('check_resultTitle').style.color="red";
     document.getElementById('checkpin').style.border="1px solid red";
