@@ -8,30 +8,48 @@ body {
   overflow: hidden;
 }
 
-
+#check_resultTitle{
+  color: #FFFFFF;
+  font-size: 70px;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#checkpin{
+  padding: 20px;
+  background-color: #141414;
+  border: 1px solid  #343A90;
+  font-size: 48px;
+  outline: none;
+  text-align: center;
+  width: 30%;
+  color: #D2D2D2;
+}
 .message-form{
   background: inherit;
-  height: 130px;
+  height: auto;
+  margin-top: 300px;
 }
-.message-form input{
+.message-form textarea{
   color: #FFFFFF;
   width: 70%;
-  background: inherit;
   font-size: 50px;
   background-color: #141414;
   padding: 20px;
   padding-left: 40px;
-  border: 0px ;
+  border: 1px solid  #343A90;
   border-radius: 25px;
   outline: none;
   text-align: left;
-  position: absolute;top: 30px;left: 50px;
+  height: 200px;
 }
 .message-form__button{
   width: 70px;
   height: 70px;
   color: #343A90;
   background-color: inherit;
+
 }
 .message-form__but{
   width: 75px;
@@ -39,8 +57,19 @@ body {
   border: 0px;
   outline: none;
   background-color: inherit;
-  position: absolute;top: 40px;right: 50px;
+  position:absolute;top:600px;right: 17%;
 }
+.message-form_categories{
+  font-size: 45px;
+  color: #D2D2D2;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #343A90;
+  position:absolute;top:598px;left: 16%;
+  border: 0px;
+  outline: none;
+}
+
 
 .head{
   background-color:  #000000;
@@ -109,7 +138,6 @@ body {
   padding: 25px;
   overflow: auto;
 }
-
 .things::-webkit-scrollbar{
   width: 0px;
 }

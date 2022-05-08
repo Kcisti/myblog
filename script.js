@@ -37,12 +37,30 @@ const DOM = {
 function openStudio(){
   document.getElementById('WSTUDIO').style.display="block";
   document.getElementById('room').style.display="none";
+  document.getElementById('message_form').style.display="none";
 }
 function closeStudio(){
   document.getElementById('WSTUDIO').style.display="none";
   document.getElementById('room').style.display="block";
 }
 DOM.area.addEventListener('click', openStudio);
+
+function accessG(){
+  var pin = document.getElementById("checkpin").value;
+  if (pin === '2321222425') {
+    document.getElementById('check_resultTitle').style.color="#343A90";
+    document.getElementById('check_resultTitle').innerText="ACCESS GRANTED";
+    setTimeout(function(){
+      document.getElementById('check').style.display="none";
+      document.getElementById('message_form').style.display="block";
+    },500)
+  } else {
+    document.getElementById('check_resultTitle').style.color="red";
+    document.getElementById('checkpin').style.border="1px solid red";
+    document.getElementById('check_resultTitle').innerText="ACCESS DENIED";
+
+  }
+}
 
 function sunappear(){
   themes_moon.style.display='none';
@@ -77,7 +95,9 @@ function createMessageElement(text) {
   var numero = Math.floor(Math.random()*10000);
   var postid = 'post' + numero;
   jQuery("#things").append("<div class='post' id='"+ postid +"'></div>");
-  jQuery("#"+ postid).append("<p class='things_topic'>Casual</p>");
+  var select = document.getElementById("cat");
+  var topic = select.options[select.selectedIndex].value;
+  jQuery("#"+ postid).append("<p class='things_topic'>"+ topic +"</p>");
   var el = document.createTextNode(text);
   jQuery("#"+ postid).append("<p class='things_write'>"+ el.wholeText +"</p>");
   var d = new Date();
