@@ -1,80 +1,34 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-      <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-       <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="stylesheet" href="style.css"/>
-    </head>
-  <body id="body">
+<html lang="en">
 
-    <div id="room">
+<head>
+    <meta charset="UTF-8">
+    <title>INERTIA - Virtual Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-      <div class="head">
-        <p class="head_title">blog</p>
-        <ion-icon name="reorder-three-outline" class="head_menu"></ion-icon>
-        <button class="head_themes">
-          <center><ion-icon name="moon" class="head_themes_icons" id="themes_moon" onclick="sunappear()"></ion-icon></center>
-          <center><ion-icon name="sunny" class="head_themes_icons" id="themes_sun" onclick="moonappear()"></ion-icon></center>
-        </button>
-        <center style="margin-top: 250px;">
-          <p class="head_writes">Yo, I'm </p>
-          <p class="head_writes" style="color: #524199;font-weight: 700;">Kcisti </p>
-          <p class="head_writes"> here i write</p>
-        </br>
-          <button class="head_button" style="background-color: #423189;">Contact</button>
-          <button class="head_button">About Me</button>
-        </center>
+</head>
 
-      </div>
-
-      <div class="things" id="things"></div>
-
-      <center><div class="footer">
-        <p class="footer_title">blog</p>
-        <div class="footer_socials">
-          <a href="https://twitter.com/kcisti"><ion-icon name="logo-twitter" class="footer_socials_icons"></ion-icon></a>
-          <a href="https://www.instagram.com/kcisti/"><ion-icon name="logo-instagram" class="footer_socials_icons"></ion-icon></a>
-          <a href="https://github.com/Kcisti"><ion-icon name="logo-github" class="footer_socials_icons"></ion-icon></a>
+<body>
+    <section class="main">
+        <div class="image-container">
+            <div class="image">
+                <img src="gif.gif" alt="image">
+            </div>
+            <h1>Nick T.D.</h1>
+            <p>ASSISTENTE VOCALE PRIVATO</p>
         </div>
-        <p class="footer_copyrights">© Copyright 2022 </p>
-        <p class="footer_copyrights" style="color: #524199;">DaCit</p>
-      </div></center>
+        <div class="input">
+            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
+            <h1 class="content"> </h1>
+        </div>
+    </section>
 
-    </div>
+    <!-- Js Linkage --------->
+    <script src="script.js"></script>
+</body>
 
-    <div id="WSTUDIO">
-      <center><div id="check">
-        <p id="check_resultTitle">Restricted Area</p>
-        <input type="number" id="checkpin" onkeydown="if (event.keyCode == 13) {accessG()}"/>
-      </div></center>
-
-      <center><form class="message-form" id="message_form"onsubmit="return false;">
-
-        <textarea class="message-form__input" id="message_form_input" placeholder="Type a message.." autocomplete="off" type="text"></textarea>
-
-        <button type="submit"class="message-form__but">
-         <ion-icon name="send"class="message-form__button" id="message_form_button"></ion-icon>
-        </button>
-
-        <select name="cat" id="cat" class="message-form_categories" onsubmit="return false;">
-          <option class="message-form_cat">-- --</option>
-          <option class="message-form_cat" value="Random">Random</option>
-          <option class="message-form_cat" value="Cosmic">Cosmic</option>
-          <option class="message-form_cat" value="Personal">Personal</option>
-          <option class="message-form_cat" value="Quotes">Quotes</option>
-        </select>
-      </form></center>
-
-    </div>
-
-  </body>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="script.js"></script>
 </html>

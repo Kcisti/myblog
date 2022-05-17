@@ -1,117 +1,135 @@
-document.getElementById('WSTUDIO').style.display="none";
-var themes_moon = document.getElementById("themes_moon");
-var themes_sun = document.getElementById("themes_sun");
+const btn = document.querySelector('.talk');
+const content = document.querySelector('.content');
 
-themes_sun.style.display='none';
+function speak(sentence) {
+    const text_speak = new SpeechSynthesisUtterance(sentence);
 
-const CLIENT_ID = 'EFslC1FFGukiWwqQ';
-const drone = new ScaleDrone(CLIENT_ID, {
-  data: { name: 'Kcisti'}
-});
+    text_speak.rate = 1;
+    text_speak.pitch = 1;
 
-drone.on('open', error => {
-  if (error) {
-    return console.error(error);
-  }
-  console.log('Successfully connected to Scaledrone');
+    window.speechSynthesis.speak(text_speak);
+}
 
-  const room = drone.subscribe('observable-room');
-  room.on('open', error => {
-    if (error) {
-      return console.error(error);
+function wishMe() {
+    var day = new Date();
+    var hr = day.getHours();
+
+    if(hr >= 0 && hr < 12) {
+        speak("Buongiorno Capo");
     }
-    console.log('Successfully joined room');
-  });
 
-  room.on('data', (text,) => {
-      addMessageToListDOM(text);
-  });
-});
-const DOM = {
-  messages: document.querySelector('.things'),
-  input: document.querySelector('.message-form__input'),
-  form: document.querySelector('.message-form'),
-  area: document.querySelector('.head_title'),
-};
+    else if(hr == 12) {
+        speak("Spero si una buona giornata Capo");
+    }
 
-function openStudio(){
-  document.getElementById('WSTUDIO').style.display="block";
-  document.getElementById('check').style.display="block";
-  document.getElementById('room').style.display="none";
-  document.getElementById('message_form').style.display="none";
-}
-function closeStudio(){
-  document.getElementById('WSTUDIO').style.display="none";
-  document.getElementById('room').style.display="block";
-}
-DOM.area.addEventListener('click', openStudio);
+    else if(hr > 12 && hr <= 17) {
+        speak("Buon Pomeriggio Capo");
+    }
 
-function accessG(){
-  var pin = document.getElementById("checkpin").value;
-  if (pin === '2321222425') {
-    document.getElementById('check_resultTitle').style.color="#343A90";
-    document.getElementById('check_resultTitle').innerText="ACCESS GRANTED";
-    setTimeout(function(){
-      document.getElementById('check').style.display="none";
-      document.getElementById('message_form').style.display="block";
-    },700)
-  } else {
-    document.getElementById('check_resultTitle').style.color="red";
-    document.getElementById('checkpin').style.border="1px solid red";
-    document.getElementById('check_resultTitle').innerText="ACCESS DENIED";
-
-  }
+    else {
+        speak("Buona serata Capo");
+    }
 }
 
-function sunappear(){
-  themes_moon.style.display='none';
-  themes_sun.style.display='block';
-}
-function moonappear(){
-  themes_moon.style.display='block';
-  themes_sun.style.display='none';
+window.addEventListener('load', ()=>{
+    speak("Attivo Nick");
+    speak("Sono Online");
+    wishMe();
+})
+
+const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+recognition.onresult = (event) => {
+    const current = event.resultIndex;
+    const transcript = event.results[current][0].transcript;
+    content.textContent = transcript;
+    speakThis(transcript.toLowerCase());
 }
 
-function sendMessage() {
-  const value = DOM.input.value;
-  if (value === '') {
-    return;
-  }
-  DOM.input.value = '';
-  drone.publish({
-    room: 'observable-room',
-    message: value,
-  });
-  closeStudio();
-}
-DOM.form.addEventListener('click', sendMessage);
+btn.addEventListener('click', ()=>{
+    recognition.start();
+})
+content.addEventListener('click', ()=>{
+    recognition.start();
+})
 
-function addZero(i){
-  if (i < 10) {
-    i = "0" + i;
-  } return i;
-}
+function speakThis(message) {
+    const speech = new SpeechSynthesisUtterance();
 
-function createMessageElement(text) {
-  var numero = Math.floor(Math.random()*10000);
-  var postid = 'post' + numero;
-  jQuery("#things").append("<div class='post' id='"+ postid +"'></div>");
-  var select = document.getElementById("cat");
-  var topic = select.options[select.selectedIndex].value;
-  jQuery("#"+ postid).append("<p class='things_topic'>"+ topic +"</p>");
-  var el = document.createTextNode(text);
-  jQuery("#"+ postid).append("<p class='things_write'>"+ el.wholeText +"</p>");
-  var d = new Date();
-  var date = d.getDate()+'/'+d.getMonth()+'/'+d.getFullYear();
-  var ora = addZero(d.getHours());
-  var min = addZero(d.getMinutes());
-  jQuery("#"+ postid).append("<p class='things_name'>Kcisti</p>");
-  jQuery("#"+ postid).append("<p class='things_dates'>" + date + "</p>");
-  jQuery("#"+ postid).append("<ion-icon name='time-outline' class='things_hourI'></ion-icon>");
-  jQuery("#"+ postid).append("<p class='things_hour'>"+ ora +":"+ min +"</p>");
-}
+    speech.text = "Non ti sento, Riprova";
 
-function addMessageToListDOM(text) {
-  const content = DOM.messages;
-  content.append(createMessageElement(text));
+    if(message.includes('ciao')) {
+        const finalText = "Ciao sono Nick. Chiedi in modo chiaro la mansione da svolgere, io ti ascolto";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('come va')) {
+        const finalText = "Tutto bene, spero anche tu";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('tuo nome')) {
+        const finalText = "Sono Nicholas Tyler Durden primo di Cappa";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('sono angela bos')|| message.includes('23-25')) {
+        const finalText = "Ti conosco, il mio capo mi parla sempre di te. Dice che sei magnifica.";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('google')) {
+        window.open("https://google.com", "_blank");
+        const finalText = "Lo apro";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('instagram')) {
+        window.open("https://instagram.com", "_blank");
+        const finalText = "Lo apro";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('cosa è') || message.includes('chi è') || message.includes('dove è')) {
+        window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "Cerco su internet riguardo " + message;
+        speech.text = finalText;
+    }
+
+    else if(message.includes('wikipedia')) {
+        window.open(`https://en.wikipedia.org/wiki/${message.replace("wikipedia", "")}`, "_blank");
+        const finalText = "Apro wikipedia " + message;
+        speech.text = finalText;
+    }
+
+    else if(message.includes('ora')) {
+        const time = new Date().toLocaleString(undefined, {hour: "numeric", minute: "numeric"})
+        const finalText = time;
+        speech.text = finalText;
+    }
+
+    else if(message.includes('data')) {
+        const date = new Date().toLocaleString(undefined, {month: "short", day: "numeric"})
+        const finalText = date;
+        speech.text = finalText;
+    }
+
+    else if(message.includes('calcolatrice')) {
+        window.open('Calculator:///')
+        const finalText = "La apro";
+        speech.text = finalText;
+    }
+
+    else {
+        window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
+        const finalText = "Cerco " + message + " su google";
+        speech.text = finalText;
+    }
+
+    speech.volume = 1;
+    speech.pitch = 1;
+    speech.rate = 1;
+
+    window.speechSynthesis.speak(speech);
 }
