@@ -1,5 +1,5 @@
 const btn = document.querySelector('.talk');
-const content = document.querySelector('.content');
+const content = document.querySelector('.message');
 
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
@@ -50,9 +50,7 @@ recognition.onresult = (event) => {
 btn.addEventListener('click', ()=>{
     recognition.start();
 })
-content.addEventListener('click', ()=>{
-    recognition.start();
-})
+
 
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
@@ -70,7 +68,7 @@ function speakThis(message) {
     }
 
     else if(message.includes('tuo nome')) {
-        const finalText = "Sono Nicholas Tyler Durden primo di Cappa";
+        const finalText = "Sono Nicholas Tailer Darden primo";
         speech.text = finalText;
     }
 
@@ -104,14 +102,16 @@ function speakThis(message) {
     }
 
     else if(message.includes('ora')) {
-        const time = new Date().toLocaleString(undefined, {hour: "numeric", minute: "numeric"})
-        const finalText = time;
+        const timeHour = new Date().toLocaleString(undefined, {hour: "numeric"})
+        const timeMinute = new Date().toLocaleString(undefined, {minute: "numeric"})
+        const finalText = 'sono le' + timeHour + 'e'+ timeMinute + 'minuti';
         speech.text = finalText;
     }
 
     else if(message.includes('data')) {
-        const date = new Date().toLocaleString(undefined, {month: "short", day: "numeric"})
-        const finalText = date;
+        const date = new Date().toLocaleString(undefined, {month: "long", day: "numeric"})
+        const year = new Date().toLocaleString(undefined, {year: "numeric"})
+        const finalText = 'oggi è il' + date + " . dell'anno" + year;
         speech.text = finalText;
     }
 

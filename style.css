@@ -7,6 +7,9 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+  overflow: hidden;
+}
 .main {
   min-height: 100vh;
   position: relative;
@@ -22,34 +25,23 @@
   padding: 10px;
 }
 
-.main .image-container .image {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main .image-container .image img {
-  width: 170px;
-  align-items: center;
-}
-
 .main .image-container h1 {
   color: #00bcd4;
   text-align: center;
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 .main .image-container p {
   color: #324042;
   text-align: center;
   margin-bottom: 20px;
+  font-size: 50px;
 }
 
 .main .input {
   float: left;
-  font-size: 23px;
+  font-size: 48px;
   padding: 20px;
   cursor: pointer;
   display: inline;
@@ -61,20 +53,21 @@
   background: transparent;
   outline: none;
   border: none;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
   float: right;
-  font-size: 15px;
   cursor: pointer;
 }
 
 .main .input .talk i {
-  font-size: 20px;
+  font-size: 75px;
   color: #aed0d0;
 }
 
-.main .input .content {
-  color: #aed0d0;
-  font-size: 15px;
-  margin-right: 20px;
+.main .messages .message {
+  color: #D2D2D2;
+  font-size: 50px;
+  margin-top: 80px;
+  text-transform: uppercase;
 }
