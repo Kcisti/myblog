@@ -1,5 +1,3 @@
-
-
 * {
   margin: 0;
   padding: 0;
@@ -21,25 +19,30 @@ body{
   justify-content: center;
 }
 
-.main .image-container {
+#sirio{
+  width: 400px;
+  height: 400px;
+}
+
+.header {
   padding: 10px;
 }
 
-.main .image-container h1 {
-  color: #00bcd4;
+.header h1 {
+  color: #28274B;
   text-align: center;
   margin-bottom: 10px;
   font-size: 80px;
 }
 
-.main .image-container p {
+.header p {
   color: #324042;
   text-align: center;
   margin-bottom: 20px;
   font-size: 50px;
 }
 
-.main .input {
+.micContent {
   float: left;
   font-size: 48px;
   padding: 20px;
@@ -49,7 +52,7 @@ body{
   background: rgb(202 253 255 / 50%);
 }
 
-.main .input .talk {
+.mic {
   background: transparent;
   outline: none;
   border: none;
@@ -60,12 +63,12 @@ body{
   cursor: pointer;
 }
 
-.main .input .talk i {
+.mic i {
   font-size: 75px;
   color: #aed0d0;
 }
 
-.main .messages .message {
+.message {
   color: #D2D2D2;
   font-size: 50px;
   margin-top: 80px;

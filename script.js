@@ -1,39 +1,16 @@
-const btn = document.querySelector('.talk');
+const btn = document.querySelector('.micContent');
 const content = document.querySelector('.message');
+document.getElementById('sirio').play();
 
 function speak(sentence) {
     const text_speak = new SpeechSynthesisUtterance(sentence);
-
-    text_speak.rate = 1;
-    text_speak.pitch = 1;
-
+    text_speak.lang = 'it_IT';
+    text_speak.rate = 0.90;
+    text_speak.pitch = 0.8;
     window.speechSynthesis.speak(text_speak);
 }
 
-function wishMe() {
-    var day = new Date();
-    var hr = day.getHours();
-
-    if(hr >= 0 && hr < 12) {
-        speak("Buongiorno Capo");
-    }
-
-    else if(hr == 12) {
-        speak("Spero si una buona giornata Capo");
-    }
-
-    else if(hr > 12 && hr <= 17) {
-        speak("Buon Pomeriggio Capo");
-    }
-
-    else {
-        speak("Buona serata Capo");
-    }
-}
-
 window.addEventListener('load', ()=>{
-    speak("Attivo Nick");
-    speak("Sono Online");
     wishMe();
 })
 
@@ -51,24 +28,52 @@ btn.addEventListener('click', ()=>{
     recognition.start();
 })
 
+function wishMe() {
+    var day = new Date();
+    var hr = day.getHours();
+
+    if(hr >= 0 && hr < 12) {
+        speak("Buongiorno");
+    }
+
+    else if(hr == 12) {
+        speak("Spero si una buona giornata");
+    }
+
+    else if(hr > 12 && hr <= 17) {
+        speak("Buon Pomeriggio");
+    }
+
+    else {
+        speak("Buona sera");
+    }
+}
+
 
 function speakThis(message) {
     const speech = new SpeechSynthesisUtterance();
 
     speech.text = "Non ti sento, Riprova";
 
+    //Personal
+
     if(message.includes('ciao')) {
-        const finalText = "Ciao sono Nick. Chiedi in modo chiaro la mansione da svolgere, io ti ascolto";
+        const finalText = "Ciao sono Nick. Chiedi la mansione da svolgere, io ti ascolto";
         speech.text = finalText;
     }
 
     else if(message.includes('come va')) {
-        const finalText = "Tutto bene, spero anche tu";
+        const finalText = "Tutto bene";
         speech.text = finalText;
     }
 
     else if(message.includes('tuo nome')) {
-        const finalText = "Sono Nicholas Tailer Darden primo";
+        const finalText = "Sono Nick";
+        speech.text = finalText;
+    }
+
+    else if(message.includes('anni hai')) {
+        const finalText = "Ho diciotto anni";
         speech.text = finalText;
     }
 
@@ -76,6 +81,8 @@ function speakThis(message) {
         const finalText = "Ti conosco, il mio capo mi parla sempre di te. Dice che sei magnifica.";
         speech.text = finalText;
     }
+
+    //util functions
 
     else if(message.includes('google')) {
         window.open("https://google.com", "_blank");
@@ -101,6 +108,12 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
+    else if(message.includes('meteo')) {
+      window.open(`https://www.google.com/search?q=meteo`, "_blank");
+        const finalText = 'Lo cerco';
+        speech.text = finalText;
+    }
+
     else if(message.includes('ora')) {
         const timeHour = new Date().toLocaleString(undefined, {hour: "numeric"})
         const timeMinute = new Date().toLocaleString(undefined, {minute: "numeric"})
@@ -115,21 +128,16 @@ function speakThis(message) {
         speech.text = finalText;
     }
 
-    else if(message.includes('calcolatrice')) {
-        window.open('Calculator:///')
-        const finalText = "La apro";
-        speech.text = finalText;
-    }
-
     else {
         window.open(`https://www.google.com/search?q=${message.replace(" ", "+")}`, "_blank");
-        const finalText = "Cerco " + message + " su google";
+        const finalText = "Posso cercare su google";
         speech.text = finalText;
     }
 
-    speech.volume = 1;
+    speech.lang = 'it_IT';
+    speech.rate = 0.95;
     speech.pitch = 1;
-    speech.rate = 1;
+    speech.volume=1;
 
     window.speechSynthesis.speak(speech);
 }

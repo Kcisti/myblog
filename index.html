@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html" />
-    <title>INERTIA - Virtual Assistant</title>
+    <title>Private Assistant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,23 @@
 
 <body>
     <section class="main">
-        <div class="image-container">
-            <h1>Nick T.D.</h1>
-            <p>ASSISTENTE PRIVATO</p>
-        </div>
-        <div class="input">
-            <button class="talk"><i class="fas fa-microphone-alt"></i></button>
-        </div>
-        <div class="messages">
-            <h1 class="message"></h1>
-        </div>
+      <section class="stage">
+        <figure class="ball">
+          <span class="shadow"></span>
+          <span class="iris"></span>
+        </figure>
+      </section>
+      <video id="sirio" muted autoplay src="sirio.mp4"></video>
+      <div class="header">
+        <h1>Nick T.D.</h1>
+        <p>ASSISTENTE PRIVATO</p>
+      </div>
+      <div class="micContent">
+        <button class="mic"><i class="fas fa-microphone-alt"></i></button>
+      </div>
+      <div class="messages">
+        <h1 class="message"></h1>
+      </div>
     </section>
 
     <!-- Js Linkage --------->
