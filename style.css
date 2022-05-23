@@ -29,14 +29,14 @@ body{
 }
 
 .header h1 {
-  color: #28274B;
+  color: #343A90;
   text-align: center;
   margin-bottom: 10px;
   font-size: 80px;
 }
 
 .header p {
-  color: #324042;
+  color: #28274B;
   text-align: center;
   margin-bottom: 20px;
   font-size: 50px;
