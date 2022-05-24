@@ -7,51 +7,56 @@
 
 body{
   overflow: hidden;
-}
-.main {
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
-  background: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #000000;
 }
 
-#sirio{
-  width: 400px;
-  height: 400px;
+#messages_container{
+  height: 1100px;
+  overflow: auto;
+}
+#messages_container::-webkit-scrollbar{
+  width: 0px;
 }
 
-.header {
-  padding: 10px;
-}
-
-.header h1 {
-  color: #343A90;
-  text-align: center;
-  margin-bottom: 10px;
-  font-size: 80px;
-}
-
-.header p {
-  color: #28274B;
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 50px;
-}
-
-.micContent {
-  float: left;
-  font-size: 48px;
+.bot-messages{
+  background-color: #D2D2D2;
+  border-radius: 100px;
+  color: #000000;
+  font-size: 38px;
+  font-weight: 500;
+  border: 2px solid #FFFFFF;
+  margin: 30px;
   padding: 20px;
+  width: fit-content;
+  max-width:75%;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.user-messages{
+  background-color: #D2D2D2;
+  border-radius: 100px;
+  color: #000000;
+  font-size: 38px;
+  font-weight: 500;
+  border: 2px solid #FFFFFF;
+  margin: 50px;
+  padding: 20px;
+  width: fit-content;
+  max-width:75%;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.mic-content {
+  width: 150px;
+  height: 150px;
+  font-size: 48px;
   cursor: pointer;
-  display: inline;
   border-radius: 20px;
   background: rgb(202 253 255 / 50%);
 }
-
 .mic {
   background: transparent;
   outline: none;
@@ -59,18 +64,10 @@ body{
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  float: right;
   cursor: pointer;
 }
-
 .mic i {
+  text-align: center;
   font-size: 75px;
   color: #aed0d0;
-}
-
-.message {
-  color: #D2D2D2;
-  font-size: 50px;
-  margin-top: 80px;
-  text-transform: uppercase;
 }
