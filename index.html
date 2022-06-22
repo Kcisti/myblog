@@ -4,103 +4,43 @@
       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
       <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
-       <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="style.css"/>
     </head>
-  <body id="body">
-
-      <div class="head">
-        <div class="navbar">
-          <p class="nav_title">blog</p>
-          <ion-icon name="reorder-three-outline" class="nav_menu" id="menuIcon"></ion-icon>
-          <ion-icon name="reorder-three-outline" class="nav_menuUn" id="menuIconUn"></ion-icon>
+  <body>
+    <div class="visible">
+      <center><div class="navbar">
+        <div class="navbar_left">
+          <img src="img/blue_white_logo.png" class="logo"></img>
         </div>
-        <div id="navMenu">
-          <div id="navAnima">
-            <button class="nav_menu_options" id="home">Home</button>
-            <button class="nav_menu_options" id="aboutMe">About Me</button>
-            <button class="nav_menu_options" id="skills">Skills</button>
-            <button class="nav_menu_options" id="contact">Contact</button>
+        <div class="navbar_right">
+          <div class="navbar_socials">
+            <a href="https://twitter.com/kcisti">
+              <ion-icon name="logo-twitter" class="nav_socials"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/kcisti/">
+              <ion-icon name="logo-instagram" class="nav_socials"></ion-icon>
+            </a>
+            <a href="https://github.com/Kcisti">
+              <ion-icon name="logo-github" class="nav_socials"></ion-icon>
+            </a>
           </div>
+          <ion-icon name="search" class="nav_search" id="iconSearch"></ion-icon>
+          <ion-icon name="menu" class="nav_menu" id="iconMenu"></ion-icon>
         </div>
-        <div class="headFOOT">
-          <p class="head_writes">Yo, I'm </p>
-          <p class="head_writes" style="color: #524199;font-weight: 700;margin:0px;">Kcisti </p>
-          </br>
-          <button class="head_button" href="tel:+39 3529015788">Phone</button>
-          </br>
+      </div></center>
+      <div class="smok">
+        <div class="home">
+          <img class="homePortrait" src="img/portrait.png"></img>
+          <p class="homeTitle" id="homeTitle">Good afternoon</p>
+          <p class="homeTitle"></br> I'm </p>
+          <p class="homeTitle" style="color:#1f1d70">Marco Filippelli</p>
+          <p class="text">Curabitur cursus scelerisque accumsan. Nulla pellentesque gravida justo, non iaculis ante sollicitudin eu. Ut suscipit a leo ac molestie. Pellentesque dictum odio a auctor ullamcorper. Vestibulum in sapien eu nisl imperdiet iaculis at sed risus. Nam non enim ut purus tincidunt elementum quis iaculis lorem. Cras ipsum ex, pulvinar ac diam vel, pharetra semper lectus. Pellentesque aliquet turpis a nulla convallis vehicula. Vestibulum convallis efficitur magna, nec vehicula eros sagittis sit amet.Integer mattis rhoncus sem eget ornare. Mauris porta a nunc tempor posuere. Nullam gravida rhoncus ante sed consectetur. Nulla facilisi. Donec et nibh lectus. Integer vel enim rutrum mauris interdum gravida. Suspendisse potenti. Donec eu eros condimentum, aliquam urna non, imperdiet nibh. Duis malesuada quis eros nec fermentum. Sed viverra risus ac metus condimentum, et malesuada mauris vehicula. Praesent eleifend quis urna aliquam vehicula. Donec a tortor vulputate, fermentum leo id, dignissim enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In cursus risus sed lorem vestibulum tristique. Ut non elit id augue sollicitudin hendrerit pharetra id purus. Sed turpis tellus, pellentesque consequat ligula ut, luctus efficitur sem. Sed volutpat ex elit, eget lacinia nibh lacinia non. Phasellus accumsan tellus ac ex luctus, eget accumsan enim lacinia. Sed sit amet fermentum ligula. Mauris tincidunt orci sapien, in efficitur 
+          </p>
         </div>
       </div>
-      <div class="corpo">
-        <div id="homeSection">
-          <p class="section_titles">Home </p>
-        </div>
-        <div id="aboutMeSection">
-          <p class="section_titles">About Me</p>
-        </div>
-        <div id="skillsSection">
-          <p class="section_titles">Skills </p>
-          <div class="skills_body">
-
-            <div class="skill_">
-              <p class="skill_name">HTML</p>
-              <div class="skill_bar"></div>
-            </div>
-
-            <div class="skill_">
-              <p class="skill_name">CSS</p>
-              <div class="skill_bar"></div>
-            </div>
-
-            <div class="skill_">
-              <p class="skill_name">JAVASCRIPT</p>
-              <div class="skill_bar"></div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-      <div class="things" id="things"></div>
-
-      <center><div class="footer">
-        <p class="footer_title">blog</p>
-        <div class="footer_socials">
-          <a href="https://twitter.com/kcisti"><ion-icon name="logo-twitter" class="footer_socials_icons"></ion-icon></a>
-          <a href="https://www.instagram.com/kcisti/"><ion-icon name="logo-instagram" class="footer_socials_icons"></ion-icon></a>
-          <a href="https://github.com/Kcisti"><ion-icon name="logo-github" class="footer_socials_icons"></ion-icon></a>
-        </div>
-        <p class="footer_copyrights">© Copyright 2022 </p>
-        <p class="footer_copyrights" style="color: #524199;">BLOG</p>
-      </div></center>
-
-    <div id="WSTUDIO">
-      <center><div id="check">
-        <p id="check_resultTitle">Restricted Area</p>
-        <input type="number" id="checkpin" onkeydown="if (event.keyCode == 13) {accessGranted()}"/>
-      </div></center>
-
-      <center><form class="message-form" id="message_form"onsubmit="return false;">
-
-        <textarea class="message-form__input" id="message_form_input" placeholder="Type a message.." autocomplete="off" type="text"></textarea>
-
-        <button type="submit"class="message-form__but">
-         <ion-icon name="send"class="message-form__button" id="message_form_button"></ion-icon>
-        </button>
-
-        <select name="cat" id="cat" class="message-form_categories" onsubmit="return false;">
-          <option class="message-form_cat">-- --</option>
-          <option class="message-form_cat" value="Random">Random</option>
-          <option class="message-form_cat" value="Cosmic">Cosmic</option>
-          <option class="message-form_cat" value="Personal">Personal</option>
-          <option class="message-form_cat" value="Quotes">Quotes</option>
-        </select>
-      </form></center>
-
     </div>
 
   </body>
