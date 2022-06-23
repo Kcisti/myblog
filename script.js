@@ -11,6 +11,10 @@ const DOM = {
   //divs
   menu : document.querySelector('.menu'),
   visible : document.querySelector('.visible'),
+  home : document.querySelector('.home'),
+  aboutMe : document.querySelector('.aboutMe'),
+  skills : document.querySelector('.skills'),
+  contact : document.querySelector('.contact'),
 }
 
 function message(){
@@ -47,16 +51,32 @@ DOM.menuEsc.addEventListener('click', closeMenu);
 
 
 function TOhome(){
-
+  closeMenu();
+  DOM.home.style.transform = 'translateX(0px)';
+  DOM.aboutMe.style.transform = 'translateX(-1200px)';
+  DOM.skills.style.transform = 'translateX(-1200px)';
+  DOM.contact.style.transform = 'translateX(-1200px)';
 }
 function TOaboutUs(){
-
+  closeMenu();
+  DOM.home.style.transform = 'translateX(-1200px)';
+  DOM.aboutMe.style.transform = 'translateX(0px)';
+  DOM.skills.style.transform = 'translateX(-1200px)';
+  DOM.contact.style.transform = 'translateX(-1200px)';
 }
 function TOskills(){
-
+  closeMenu();
+  DOM.home.style.transform = 'translateX(-1200px)';
+  DOM.aboutMe.style.transform = 'translateX(-1200px)';
+  DOM.skills.style.transform = 'translateX(0px)';
+  DOM.contact.style.transform = 'translateX(-1200px)';
 }
 function TOcontact(){
-
+  closeMenu();
+  DOM.home.style.transform = 'translateX(-1200px)';
+  DOM.aboutMe.style.transform = 'translateX(-1200px)';
+  DOM.skills.style.transform = 'translateX(-1200px)';
+  DOM.contact.style.transform = 'translateX(0px)';
 }
 
 DOM.menuHome.addEventListener('click',TOhome);
