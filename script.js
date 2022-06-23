@@ -30,13 +30,11 @@ function message(){
 }
 
 function switchTOmenu(){
-  DOM.menu.style.transform = 'translateX(0px)';
   DOM.visible.style.transform = 'translateX(800px)';
   DOM.visible.style.backgroundColor = '#8F8F8F';
   console.log('menu on');
 }
 function closeMenu(){
-  DOM.menu.style.transform = 'translateX(-800px)';
   DOM.visible.style.transform = 'translateX(0px)';
   DOM.visible.style.backgroundColor = '#D2D2D2';
   console.log('menu off');

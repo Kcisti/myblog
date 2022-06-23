@@ -9,9 +9,6 @@ body {
 }
 .visible{
   transition: all 0.5s ease-in-out;
-  position: absolute;
-  top: 0px;left: 0px;
-  right: 0px;bottom: 0px;
 }
 .menu{
   width: 600px;
@@ -141,7 +138,7 @@ body {
   box-shadow: 0px 30px 40px #151515;
 }
 .post_title{
-  font-size: 65px;
+  font-size: 50px;
   text-align: left;
   font-weight: 500;
   margin-bottom: 30px;
@@ -150,7 +147,7 @@ body {
 }
 .post_write{
   margin-top: 100px;
-  font-size: 50px;
+  font-size: 40px;
   text-align: right;
   margin-left: 50px;
   font-weight: 500;
