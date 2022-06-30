@@ -108,14 +108,14 @@ body {
   margin-bottom: 100px;
 }
 .homeTitle{
-  font-size: 80px;
+  font-size: 70px;
   font-weight: 500;
   display: inline;
 }
 .text{
   margin-top: 50px;
   font-size: 35px;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 50px;
 }
 .line{
