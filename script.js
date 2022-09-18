@@ -50,6 +50,13 @@ function TOhome(){
 }
 function TOaboutUs(){
   closeMenu();
+  setTimeout(function(){
+    window.scrollTo({
+      top : 0,
+      left : 900,
+      behavior: 'smooth'
+    });
+  },600);
 }
 function TOskills(){
   closeMenu();
