@@ -54,6 +54,7 @@ html{
 .heading p{
     max-width: 60rem;
     margin: auto;
+    margin-left: 0;
     color: var(--Grayish-Blue);
     font-size: 1.7rem;
 }
