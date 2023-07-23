@@ -63,16 +63,12 @@ DOM.contactbuttonmob.addEventListener('click', contactSectionF);
 
 
 
-function openmobilemenu(){
-    DOM.menubutton.style.display = 'none';
-    DOM.menu.style.display = 'block';
-    DOM.menubuttonclose.style.display = 'block';
+function mobilemenu(){
+    DOM.menu.classList.toggle('head_menu_mobile_close');
+    DOM.homebuttonmob.classList.toggle('head_menu_section_close');
+    DOM.aboutbuttonmob.classList.toggle('head_menu_section_close');
+    DOM.projectbuttonmob.classList.toggle('head_menu_section_close');
+    DOM.contactbuttonmob.classList.toggle('head_menu_section_close');
 }
-DOM.menubutton.addEventListener('click', openmobilemenu);
-
-function closemobilemenu(){
-    DOM.menubutton.style.display = 'block';
-    DOM.menu.style.display = 'none';
-    DOM.menubuttonclose.style.display = 'none';
-}
-DOM.menubuttonclose.addEventListener('click', closemobilemenu);
+DOM.menubutton.addEventListener('click', mobilemenu);
+window.addEventListener('load', mobilemenu);
