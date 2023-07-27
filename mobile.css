@@ -1,0 +1,125 @@
+@media screen and (max-width: 770px){
+    .head_menu li{
+        display: none;
+    }
+    .head_menu_icon,.head_menu_mobile{
+        display: flex;
+    }
+    .head_menu_mobile{
+        position: fixed;right: 10%;top: 11%;
+        flex-direction: column;
+        max-height: 15rem;
+        max-width: 70%;
+        transition: 0.8s ease-in-out;;
+        transform-origin:top;
+        width: 70%;
+        color: var(--madWhite);
+        background-color: var(--madGrey);
+        border-radius: 0.2rem;
+        opacity: 100%;
+    }
+    .head_menu_mobile li{
+        text-align: center;
+        font-size: 1rem;
+        list-style: none;
+        padding: 1.1rem;
+        text-transform: uppercase;
+    }
+
+    .head_menu_mobile_close{
+        max-height: 0px;
+        max-width: 0px;
+        border:0px;
+        opacity: 0%;
+    }
+
+    .head_menu{
+        height: auto;
+        left: 10%;right: 10%;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .head_menu_section_close{
+        display: none;
+    }
+
+    .head_menu_name{
+        margin-top: 0.4rem;
+        font-size: 1.5rem;
+        vertical-align: middle;
+    }
+    .head_menu_icon,.head_menu_icon_2{
+        font-size: 2.8rem;
+    }
+
+    .home, .about, .prproject, .contact{
+        height: 55rem;
+        margin-left: 12%;
+        margin-right: 12%;
+        border-bottom: 0;
+        border-top: 0;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    } 
+    .home_text{
+        font-size: 2.4rem;
+        width: 100%;
+        text-align: center;
+    }
+    .home_button{
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .about_title{
+        font-size: 1.2rem;
+    }
+    .about_text{
+        font-size: 1.1rem;
+    }
+    .about_socials{
+        font-size: 1.3rem;
+        width:100%;
+        margin-top: 2rem;
+    }
+    .prproject{
+        gap: 1rem;
+        margin-left: 12%;
+        margin-right: 12%;
+        
+        grid-template-columns: 100%;
+    }
+    .projects{
+        margin: 0;
+    }
+    .project_title{
+        font-size: 1.2rem;
+    }
+    .project_description{
+        font-size: 1.1rem;
+    }
+    .project_button{
+        font-size: 1.1rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .box h3{
+        font-size: 1.2rem;
+    }
+    .box a{
+        font-size: 1rem;
+    }
+    .box-container{
+        gap:0;
+    }
+    .box{
+        background: none;
+        padding:0.5rem;
+        border: 0;
+    }
+    .contact .credit{
+        margin-top:  2rem;
+        border-top: 0;
+    }
+}
+
