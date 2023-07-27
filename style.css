@@ -1,21 +1,15 @@
 *{
     font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0; padding: 0;
     -webkit-text-size-adjust:none;
     font-size-adjust: none;
 }
 :root{
-    --totBlack : hsl(0, 0%, 0%);
-    --carbonGrey : hsl(0, 0%, 7%);
     --smokeGrey : hsl(240, 2%, 12%);
     --lightGrey : hsl(240, 1%, 27%);
-    --murkyWhite : hsl(0, 0%, 82%);
     
-    --madLime : #C3FF00;
-    --madPBlue : #4638FF;
-    --madWhite : #F2F2F2;
-    --madBlack : #0E0E0E;
+    --madWhite : hsl(0, 0%, 95%);
+    --madBlack : hsl(0, 0%, 5%);
     --madGrey : hsl(0, 0%, 10%);
 }
   
@@ -93,35 +87,45 @@ body::-webkit-scrollbar-thumb{
 }
 .home_button{
     margin-top: 3.125rem;
-    color: var(--madWhite);
-    font-size: 0.875rem;
-    padding: 0.625rem;
+    color: var(--madBlack);
+    font-size: 0.813rem;
+    padding: 0.5rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     width: fit-content;
-    border-radius: 0.188rem;
-    background-color: var(--madGrey);
+    border-radius: 1.7rem;
+    background-color: var(--madWhite);
     border: 0;
 }
 
 .about{
     height: 37.5rem;
-    margin-left: 14%;
-    margin-right: 14%;
+    margin-left: 16%;
+    margin-right: 16%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-bottom: .1rem solid var(--lightGrey);
 }
+
+.aboutcontainer{
+    padding: 1.875rem;
+    background-color: var(--madGrey);
+    border-radius: 0.2rem;
+    border: .1rem solid var(--lightGrey);
+}
+
 .about_title{
-    margin-top: 8.125rem;
     color: var(--madWhite);
-    font-size: 1.875rem
+    font-size: 1rem;
+    text-decoration: underline;
 }
 .about_text{
     width: 90%;
     margin-top: 1.25rem;
-    color: var(--lightGrey);
-    font-size: 1.125rem;
+    color: var(--madWhite);
+    font-size: 0.813rem;
 }
 .about_socials{
     margin-top: 1.563rem;
@@ -129,7 +133,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: row;
     justify-content: space-around;
     color: var(--madWhite);
-    font-size: 1.125rem;
+    font-size: 1rem;
     width: 14%;
 }
 
@@ -140,20 +144,18 @@ body::-webkit-scrollbar-thumb{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11rem,15.2rem));
     gap:3rem;
+    align-content: center;
 }
 
 .projects{
-    margin-top:9rem;
-    margin-bottom: 9rem;
-    border:0;
     background-color: var(--madGrey);
-    border-radius: 0.188rem;
+    border-radius: 0.2rem;
+    border: .1rem solid var(--lightGrey);
 }
 
 .project_title{
     display: block;
     margin: 1.875rem;
-    margin-top: 3.125rem;
     color: var(--madWhite);
     font-size: 1rem;
     font-weight: 500;
@@ -179,14 +181,14 @@ body::-webkit-scrollbar-thumb{
 .project_button{
     margin: 1.875rem;
     margin-top: 1.125rem;
-    color: var(--madWhite);
-    font-size: 0.75rem;
+    color: var(--madBlack);
+    font-size: 0.688rem;
     padding: 0.5rem;
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     width: fit-content;
-    border-radius: 0.188rem;
-    background-color: var(--madBlack);
+    border-radius: 1.7rem;
+    background-color: var(--madWhite);
     border: 0;
 }
 
@@ -209,12 +211,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .box{
-    border-radius: 0.188rem;
-    background-color: hsl(0, 0%, 10%);;
+    border-radius: 0.2rem;
+    background-color: var(--madGrey);
     padding: 2rem;
+    border: .1rem solid var(--lightGrey);
 }
 .box h3{
-    font-size: 1.063rem;
+    font-size: 1rem;
     color:var(--madWhite);
     padding: 1rem 0;
     font-weight: medium;
@@ -269,7 +272,6 @@ body::-webkit-scrollbar-thumb{
     .head_menu_icon,.head_menu_mobile{
         display: flex;
     }
-
     .head_menu_mobile{
         position: fixed;right: 10%;top: 11%;
         flex-direction: column;
@@ -282,10 +284,11 @@ body::-webkit-scrollbar-thumb{
         background-color: var(--madBlack);
         border-radius: 0.2rem;
         border: 0.2rem solid var(--madWhite);
+        opacity: 100%;
     }
     .head_menu_mobile li{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         list-style: none;
         padding: 1.1rem;
         text-transform: uppercase;
@@ -295,11 +298,14 @@ body::-webkit-scrollbar-thumb{
         max-height: 0px;
         max-width: 0px;
         border:0px;
+        opacity: 0%;
     }
 
     .head_menu{
         height: auto;
         left: 10%;right: 10%;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
     }
 
     .head_menu_section_close{
@@ -329,14 +335,17 @@ body::-webkit-scrollbar-thumb{
         width: 100%;
     }
     .home_button{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .about_title{
-        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    .about_text{
+        font-size: 1.1rem;
     }
     .about_socials{
-        font-size: 1.5rem;
-        width:45%;
+        font-size: 1.3rem;
+        width:100%;
         margin-top: 2rem;
     }
     .prproject{
@@ -371,6 +380,7 @@ body::-webkit-scrollbar-thumb{
     .box{
         background: none;
         padding:0.5rem;
+        border: 0;
     }
     .contact .credit{
         margin-top:  2rem;
