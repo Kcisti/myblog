@@ -91,11 +91,11 @@
     .about_text{
         font-size: 1.1rem;
     }
-    .about_socials{
-        font-size: 1.3rem;
-        width:100%;
-        margin-top: 2rem;
+    .about_button{
+        font-size: 1.1rem;
+        width: 100%;
     }
+
     .prproject{
         gap: 1rem;
         margin-left: 12%;

@@ -22,6 +22,7 @@ function homeSectionF(){
         left : 0,
         behavior: 'smooth'
       });
+      mobilemenu();
 }
 DOM.homebutton.addEventListener('click', homeSectionF);  
 DOM.homebuttonmob.addEventListener('click', homeSectionF); 
@@ -33,6 +34,7 @@ function aboutSectionF(){
         left : 0,
         behavior: 'smooth'
       });
+      mobilemenu();
 }
 DOM.aboutbutton.addEventListener('click', aboutSectionF);  
 DOM.aboutbuttonmob.addEventListener('click', aboutSectionF);  
@@ -45,6 +47,7 @@ function projectSectionF(){
         left : 0,
         behavior: 'smooth'
       });
+      mobilemenu();
 }
 DOM.projectbutton.addEventListener('click', projectSectionF);
 DOM.projectbuttonmob.addEventListener('click', projectSectionF);
@@ -56,6 +59,7 @@ function contactSectionF(){
         left : 0,
         behavior: 'smooth'
       });
+      mobilemenu();
 }
 DOM.contactbutton.addEventListener('click', contactSectionF);
 DOM.contactbuttonmob.addEventListener('click', contactSectionF);

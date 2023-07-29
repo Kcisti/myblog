@@ -135,9 +135,11 @@ body::-webkit-scrollbar-thumb{
 }
 
 .aboutcontainer{
-    background-color: var(--madGrey);
     border-radius: 0.2rem;
     padding: 1rem;
+    padding: 1.875rem;
+    border: 0.1rem solid var(--madWhite);
+    margin-top: 1.5rem;
 }
 
 .about_title{
@@ -147,10 +149,38 @@ body::-webkit-scrollbar-thumb{
     text-decoration: underline;
 }
 .about_text{
-    width: 90%;
     margin-top: 1.25rem;
     color: var(--madWhite);
     font-size: 0.813rem;
+}
+.about_button{
+    margin-top: 3.125rem;
+    margin-bottom:3.125rem ;
+    color: var(--madBlack);
+    font-size: 0.813rem;
+    font-weight: 500;
+    padding: 1rem;
+    width: 40%;
+    border-radius: 1.7rem;
+    background-color: var(--madWhite);
+    border: 0;
+}
+.aboutcontainericons{
+    border-radius: 0.2rem;
+    padding: 1rem;
+    padding: 1.875rem;
+    border: 0.1rem solid var(--madWhite);
+    display: flex;
+    gap:3rem;
+    width: 80%;
+    justify-content: space-between;
+    align-content: center;
+}
+.about_icons{
+    color: var(--madWhite);
+    font-size: 2rem;
+    font-weight: 500;
+
 }
 
 .prproject{
