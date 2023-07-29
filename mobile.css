@@ -65,7 +65,7 @@
         flex-direction: column;
     } 
     .home_text{
-        font-size: 2.3rem;
+        font-size: 2.1rem;
         width: 100%;
         margin-top: 8rem;
         text-align: center;
@@ -76,11 +76,11 @@
     }
     .home_img{
         position: absolute;
-        top: 24rem;
+        top: 25rem;
         left: 0px;right: 0px;
         margin: 0;
         width: 100%;
-        height: 31rem;
+        height: 30rem;
     }
     .aboout_container{
         margin: 0;

@@ -104,7 +104,16 @@ body::-webkit-scrollbar-thumb{
     border: 0;
 }
 .home_img{
-    background-image: url(img/designer.jpg);
+    background-image: 
+    linear-gradient(to bottom,
+    hsl(220, 84%, 10%),
+    hsla(220, 84%, 10%,0.794),
+    hsla(220, 84%, 10%, 0.474),
+    hsla(220, 84%, 10%, 0.409),
+    hsla(220, 84%, 10%, 0.474),
+    hsla(220, 84%, 10%,0.794),
+    hsl(220, 84%, 10%)),
+     url(img/designer.jpg);
     height:30rem;
     width: 80%;
     margin: 2.5rem;
@@ -133,7 +142,7 @@ body::-webkit-scrollbar-thumb{
 
 .about_title{
     color: var(--madWhite);
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     text-decoration: underline;
 }
