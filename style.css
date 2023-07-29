@@ -6,11 +6,11 @@
 }
 :root{
     --smokeGrey : hsl(240, 2%, 12%);
-    --lightGrey : hsla(240, 1%, 27%, 0.966);
+    --lightGrey : #61FF88;
     
-    --madWhite : hsl(0, 0%, 95%);
-    --madBlack : hsl(0, 0%, 5%);
-    --madGrey : hsl(0, 0%, 10%);
+    --madWhite : #61FF88;
+    --madBlack : #04122e;
+    --madGrey : #04122e;
 }
   
 body{
@@ -35,6 +35,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-around;
     cursor: pointer;
     font-size: 1rem;
+    font-weight: 500;
     color: var(--madWhite);
     padding-top: 1.563rem;
     padding-bottom: 1.563rem;
@@ -87,6 +88,7 @@ body::-webkit-scrollbar-thumb{
 .home_text{
     margin-top: 12.5rem;
     font-size: 2.813rem;
+    font-weight: 600;
     width: 80%;
     color: var(--madWhite);
 }
@@ -124,14 +126,15 @@ body::-webkit-scrollbar-thumb{
 }
 
 .aboutcontainer{
-    padding: 1.875rem;
     background-color: var(--madGrey);
     border-radius: 0.2rem;
+    padding: 1rem;
 }
 
 .about_title{
     color: var(--madWhite);
     font-size: 1rem;
+    font-weight: 500;
     text-decoration: underline;
 }
 .about_text{
@@ -139,15 +142,6 @@ body::-webkit-scrollbar-thumb{
     margin-top: 1.25rem;
     color: var(--madWhite);
     font-size: 0.813rem;
-}
-.about_socials{
-    margin-top: 1.563rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: var(--madWhite);
-    font-size: 1rem;
-    width: 14%;
 }
 
 .prproject{
