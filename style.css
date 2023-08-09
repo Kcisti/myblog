@@ -6,11 +6,11 @@
 }
 :root{
     --smokeGrey : hsl(240, 2%, 12%);
-    --lightGrey : #61FF88;
+    --lightGrey : #dfdfdf;
     
-    --madWhite : #61FF88;
-    --madBlack : #04122e;
-    --madGrey : #04122e;
+    --madWhite : #45FB83;
+    --madBlack : #000000;
+    --madGrey : #000000;
 }
   
 body{
@@ -41,7 +41,6 @@ body::-webkit-scrollbar-thumb{
     padding-bottom: 1.563rem;
     background: var(--madBlack);
     height: 1.25rem;
-    border-bottom: .1rem solid var(--lightGrey);
 }
 .head_menu_name{
     margin-top: 0.469rem;
@@ -50,6 +49,11 @@ body::-webkit-scrollbar-thumb{
 }
 .head_menu_name:hover{
     color: var(--lightGrey);
+}
+.head_menu_logo{
+    margin-top: 0.469rem;
+    margin-right: 1rem;
+    height: 2rem;
 }
 .head_menu li{
     margin-left: 0.938rem;
@@ -78,19 +82,41 @@ body::-webkit-scrollbar-thumb{
     margin-right: 14%;
     display: flex;
     flex-direction: row;
-    border-bottom: .1rem solid var(--lightGrey);
+    background-image: 
+    linear-gradient(to bottom,
+    hsl(0, 0%, 0%),
+    hsla(0, 0%, 0%, 0.794),
+    hsla(0, 0%, 0%, 0.474),
+    hsla(0, 0%, 0%, 0.794),
+    hsl(0, 0%, 0%)),
+    url(img/designer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .homeleft{
-    display: flex;
     width: 100%;
-    flex-direction: column;
 }
 .home_text{
     margin-top: 12.5rem;
     font-size: 2.813rem;
     font-weight: 600;
     width: 80%;
-    color: var(--madWhite);
+    color: var(--lightGrey );
+}
+.home_text_sub{
+    margin-top: 2.5rem;
+    font-size: 2.813rem;
+    font-weight: lighter;
+    width: 80%;
+    color: var(--lightGrey );
+    text-transform: uppercase;
+}
+.home_text_body{
+    margin-top: 2.5rem;
+    font-size: 2.813rem;
+    font-weight: lighter;
+    width: 80%;
+    color: var(--lightGrey );
 }
 .home_button{
     margin-top: 3.125rem;
@@ -106,19 +132,18 @@ body::-webkit-scrollbar-thumb{
 .home_img{
     background-image: 
     linear-gradient(to bottom,
-    hsl(220, 84%, 10%),
-    hsla(220, 84%, 10%,0.794),
-    hsla(220, 84%, 10%, 0.474),
-    hsla(220, 84%, 10%, 0.409),
-    hsla(220, 84%, 10%, 0.474),
-    hsla(220, 84%, 10%,0.794),
-    hsl(220, 84%, 10%)),
+    hsl(0, 0%, 0%),
+    hsla(0, 0%, 0%, 0.794),
+    hsla(0, 0%, 0%, 0.474),
+    hsla(0, 0%, 0%, 0.409),
+    hsla(0, 0%, 0%, 0.474),
+    hsla(0, 0%, 0%, 0.794),
+    hsl(0, 0%, 0%)),
      url(img/designer.jpg);
-    height:30rem;
-    width: 80%;
-    margin: 2.5rem;
-    margin-top: 6rem;
-    margin-right: 0;
+    height:37.5rem;
+    width: 30%;
+    margin-right: 14%;
+    float:right;
     display: inline-flex;
     background-size: cover;
 }
@@ -131,26 +156,22 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: .1rem solid var(--lightGrey);
 }
 
 .aboutcontainer{
-    border-radius: 0.2rem;
-    padding: 1rem;
-    padding: 1.875rem;
-    border: 0.1rem solid var(--madWhite);
     margin-top: 1.5rem;
 }
 
 .about_title{
-    color: var(--madWhite);
+    color: var(--lightGrey);
     font-size: 1.5rem;
     font-weight: 500;
     text-decoration: underline;
 }
 .about_text{
     margin-top: 1.25rem;
-    color: var(--madWhite);
+    margin-bottom: 1rem;
+    color: var(--lightGrey);
     font-size: 0.813rem;
 }
 .about_button{
@@ -167,9 +188,9 @@ body::-webkit-scrollbar-thumb{
 }
 .aboutcontainericons{
     border-radius: 0.2rem;
+    margin-top: 1rem;
     padding: 1rem;
     padding: 1.875rem;
-    border: 0.1rem solid var(--madWhite);
     display: flex;
     gap:3rem;
     width: 80%;
@@ -207,12 +228,12 @@ body::-webkit-scrollbar-thumb{
 .project_title{
     margin-top: 8.2rem;
     margin-bottom: 0.8rem;
-    color: var(--madWhite);
+    color: var(--lightGrey);
     font-size: 1rem;
     font-weight: 500;
 }
 .project_description{
-    color: var(--madWhite);
+    color: var(--lightGrey);
     font-size: 0.813rem;    
 }
 .project_button{
@@ -255,14 +276,14 @@ body::-webkit-scrollbar-thumb{
 }
 .box h3{
     font-size: 1rem;
-    color:var(--madWhite);
+    color:var(--lightGrey);
     padding: 1rem 0;
     font-weight: medium;
 }
 .box a{
     display: block;
     font-size: 0.813rem;
-    color:var(--madWhite);
+    color:var(--lightGrey);
     padding: 0.625rem 0;
     text-decoration: none;
     overflow: hidden;
@@ -285,13 +306,12 @@ body::-webkit-scrollbar-thumb{
     margin-top: 6.25rem;
     text-align: center;
     font-size: 15px;
-    color: var(--madWhite);
-    border-top: .1rem solid var(--lightGrey);
+    color: var(--lightGrey);
 }
 
 
 .contact .credit span{
-    color: var(--colorSecond);
+    color: var(--madWhite);
     cursor: pointer;
 }
 
