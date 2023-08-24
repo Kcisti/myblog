@@ -95,31 +95,32 @@ body::-webkit-scrollbar-thumb{
 }
 .home_text{
     margin-top: 10.5rem;
-    font-size: 2.813rem;
+    font-size: 3rem;
     font-weight: 600;
     width: 80%;
     color: var(--lightGrey );
 }
 .home_text_sub{
     margin-top: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: lighter;
-    width: 80%;
+    width: 60%;
     color: var(--lightGrey );
     text-transform: uppercase;
 }
 .home_text_body{
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     font-size: 1.1rem;
     font-weight: lighter;
     width: 50%;
     color: var(--lightGrey );
 }
 .home_button{
-    margin-top: 3.125rem;
+    margin-top: 2.125rem;
     color: var(--madBlack);
     font-size: 0.813rem;
     font-weight: 600;
+    text-transform: uppercase;
     padding: 1rem;
     width: 40%;
     border-radius: 1.7rem;
@@ -150,6 +151,13 @@ body::-webkit-scrollbar-thumb{
 .about_text{
     margin-top: 1.25rem;
     margin-bottom: 1rem;
+    display: none;
+    color: var(--lightGrey);
+    font-size: 0.813rem;
+}
+.about_text_desktop{
+    margin-top: 1.25rem;
+    margin-bottom: 1rem;
     color: var(--lightGrey);
     font-size: 0.813rem;
 }
@@ -158,13 +166,14 @@ body::-webkit-scrollbar-thumb{
     margin-bottom:3.125rem ;
     color: var(--madBlack);
     font-size: 0.813rem;
-    font-weight: 500;
     padding: 1rem;
     width: 40%;
     border-radius: 1.7rem;
     background-color: var(--madWhite);
     border: 0;
     display: none;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 .aboutcontainericons{
     border-radius: 0.2rem;
@@ -228,6 +237,8 @@ body::-webkit-scrollbar-thumb{
     border-radius: 3rem;
     background-color: var(--madWhite);
     border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
@@ -236,7 +247,6 @@ body::-webkit-scrollbar-thumb{
     height:  37.5rem;
     margin-left: 14%;
     margin-right: 14%;
-    border-top: .1rem solid var(--lightGrey);
     
 }
 

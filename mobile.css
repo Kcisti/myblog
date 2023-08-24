@@ -52,8 +52,8 @@
     }
 
     .head_menu_name{
-        margin-top: 0.4rem;
-        font-size: 1.5rem;
+        margin-top: 0.6rem;
+        font-size: 1.3rem;
         vertical-align: middle;
     }
     .menu {
@@ -63,8 +63,8 @@
         display: flex;
         flex-direction: row;
         padding: 0;
-        scale: 52%;
-        position: absolute;top: 0.4rem;
+        scale: 50%;
+        position: absolute;top: 0.5rem;
         right: 12px;
       }
       .line {
@@ -114,13 +114,13 @@
         flex-direction: column;
     } 
     .home_text{
-        font-size: 2.1rem;
+        font-size: 2rem;
         width: 100%;
         margin-top: 8rem;
         text-align: left;
     }
     .home_text_sub{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         width: 80%;
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -131,7 +131,7 @@
         text-align: left;
     }
     .home_text_body{
-        font-size: 1.1rem;
+        font-size: 1rem;
         width: 100%;
         margin-top: 1rem;
         text-align: left;
@@ -165,7 +165,11 @@
         font-size: 1.2rem;
     }
     .about_text{
+        display: block;
         font-size: 1.05rem;
+    }
+    .about_text_desktop{
+        display: none;
     }
     .about_button{
         display: block;
