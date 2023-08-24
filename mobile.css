@@ -52,8 +52,8 @@
     }
 
     .head_menu_name{
-        margin-top: 0.6rem;
-        font-size: 1.3rem;
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
         vertical-align: middle;
     }
     .menu {
@@ -64,7 +64,7 @@
         flex-direction: row;
         padding: 0;
         scale: 50%;
-        position: absolute;top: 0.5rem;
+        position: absolute;top: 0.4rem;
         right: 12px;
       }
       .line {
@@ -137,7 +137,7 @@
         text-align: left;
     }
     .home_button{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         width: 100%;
     }
     .home{
@@ -173,7 +173,7 @@
     }
     .about_button{
         display: block;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         width: 100%;
     }
     .about_icons{
@@ -198,7 +198,7 @@
         font-size: 1.1rem;
     }
     .project_button{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         margin-top: 2rem;
         width: 100%;
     }
