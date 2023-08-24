@@ -6,7 +6,7 @@ const DOM ={
     contactbutton : document.querySelector('#contactbutton'),
     home : document.querySelector('.home'),
 
-    menubutton : document.querySelector('.head_menu_icon'),
+    menubutton : document.querySelector('.menu'),
     menubuttonclose : document.querySelector('.head_menu_icon_2'),
     menu : document.querySelector('.head_menu_mobile'),
     homebuttonmob : document.querySelector('#homebuttonmob'),

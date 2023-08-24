@@ -2,7 +2,7 @@
     .head_menu li{
         display: none;
     }
-    .head_menu_icon,.head_menu_mobile{
+    .menu,.head_menu_mobile{
         display: flex;
     }
     .head_menu_mobile{
@@ -45,14 +45,63 @@
         display: none;
     }
 
+    .head_menu_logo{
+        margin-top: 0.469rem;
+        margin-right: 1rem;
+        height: 2rem;
+    }
+
     .head_menu_name{
         margin-top: 0.4rem;
         font-size: 1.5rem;
         vertical-align: middle;
     }
-    .head_menu_icon,.head_menu_icon_2{
-        font-size: 2.8rem;
-    }
+    .menu {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        scale: 52%;
+        position: absolute;top: 0.4rem;
+        right: 12px;
+      }
+      .line {
+        fill: none;
+        stroke: #45FB83;
+        stroke-width: 6;
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+          stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .line1 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      .line2 {
+        stroke-dasharray: 60 60;
+        stroke-width: 6;
+      }
+      .line3 {
+        stroke-dasharray: 60 207;
+        stroke-width: 6;
+      }
+      .opened .line1 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+      }
+      .opened .line2 {
+        stroke-dasharray: 1 60;
+        stroke-dashoffset: -30;
+        stroke-width: 6;
+      }
+      .opened .line3 {
+        stroke-dasharray: 90 207;
+        stroke-dashoffset: -134;
+        stroke-width: 6;
+      }
+        
 
     .homeleft, .about, .prproject, .contact{
         height: 55rem;
@@ -77,7 +126,7 @@
         text-align: left;
     }
     .home_text_body{
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         width: 100%;
         margin-top: 1rem;
         text-align: left;
@@ -90,6 +139,16 @@
         background-position-y:15rem;
         margin: 0;
         height: 55rem;
+        background-image: 
+        linear-gradient(to bottom,
+        hsl(0, 0%, 0%),
+        hsla(0, 0%, 0%, 0.794),
+        hsla(0, 0%, 0%, 0.474),
+        hsla(0, 0%, 0%, 0.794),
+        hsl(0, 0%, 0%)),
+        url(img/designer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     .about{
         height: 42rem;
@@ -98,14 +157,18 @@
         margin: 0;
     }
     .about_title{
-        font-size: 1.4rem;
-    }
-    .about_text{
         font-size: 1.2rem;
     }
+    .about_text{
+        font-size: 1.05rem;
+    }
     .about_button{
+        display: block;
         font-size: 1.1rem;
         width: 100%;
+    }
+    .about_icons{
+        display: block;
     }
 
     .prproject{
