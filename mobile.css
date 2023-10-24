@@ -1,224 +1,181 @@
-@media screen and (max-width: 770px){
-    .head_menu li{
-        display: none;
-    }
-    .menu,.head_menu_mobile{
-        display: flex;
-    }
-    .head_menu_mobile{
-        position: fixed;right: 10%;top: 11%;
-        flex-direction: column;
-        max-height: 15rem;
-        max-width: 70%;
-        transition: 0.8s ease-in-out;;
-        transform-origin:top;
-        width: 70%;
-        color: var(--madWhite);
-        background-color: var(--madGrey);
-        border-radius: 0.2rem;
-        opacity: 100%;
-    }
-    .head_menu_mobile li{
-        text-align: center;
-        font-size: 1rem;
-        list-style: none;
-        padding: 1.1rem;
-        text-transform: uppercase;
-    }
+@media screen and (max-width: 875px){
+  .head_menu li{
+    display: none;
+  }
+  .menu,.head_menu_mobile{
+    display: flex;
+  }
+  .head_menu_mobile{
+    position: fixed;right: 10%;top: 11%;
+    flex-direction: column;
+    max-height: 15rem;
+    max-width: 70%;
+    transition: 0.8s ease-in-out;;
+    transform-origin:top;
+    width: 70%;
+    color: var(--maincolor);
+    background-color: var(--secondcolor);
+    border-radius: 0.8rem;
+    opacity: 98%;
+  }
+  .head_menu_mobile li{
+    text-align: center;
+    font-size: 1rem;
+    list-style: none;
+    padding: 1.1rem;
+    text-transform: uppercase;
+  }
+  .head_menu_mobile_close{
+    max-height: 0px;
+    max-width: 0px;
+    border:0px;
+    opacity: 0%;
+  }
+  .head_menu{
+    height: 3rem;
+    left: 0px;right: 0px;
+    padding: 12%;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+  }
+  .head_menu_section_close{
+    display: none;
+  }
+  .head_menu_name{
+    margin-top: 0.8rem;
+    font-size: 1.1rem;
+    vertical-align: middle;
+  }
 
-    .head_menu_mobile_close{
-        max-height: 0px;
-        max-width: 0px;
-        border:0px;
-        opacity: 0%;
-    }
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    scale: 50%;
+    position: absolute;top: 0.4rem;
+    right: 12px;
+  }
+  .line {
+    fill: none;
+    stroke: var(--secondcolor);
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .home ,.about , .projects, .contact{
+    height: 50rem;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-bottom: 0;
+    border-top: 0;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-    .head_menu{
-        height: 3rem;
-        left: 0px;right: 0px;
-        padding: 12%;
-        padding-top: 2rem;
-        padding-bottom: 1.2rem;
-    }
+  .home_text{
+    margin-top: 8rem;
+    font-size: 1.6rem ;
+  }
+  .home_img{
+    height: 18rem;
+  }
 
-    .head_menu_section_close{
-        display: none;
-    }
+  .about_texts{
+    width: 100%;
+    text-align: center;
+    line-height: 1.9rem;
+  }
+  .about_text{
+    font-size: 1.5rem;
+  }
+  .about_text_sub{
+    width: 100%;
+  }
+  .about_text_subplus{
+    display: block;
+    width: 100%;
+  }
+  .about_button{
+    width: 100%;
+    font-size: 0.9;
+    padding: 1rem;
+  }
+  .about_img{
+    width: 100%;
+    height: 12rem;
+    display: none;
+  }
 
-    .head_menu_logo{
-        margin-top: 0.469rem;
-        margin-right: 1rem;
-        height: 2rem;
-    }
+  .projects{
+    align-items: center;
+  }
+  .project{
+    width: 98%;
+    height:18rem;
+    margin-top: 2rem;
+  }
+  .project_title{
+    font-size: 1.2rem;
+  }
+  .project_description{
+    font-size: 1.1rem;
+  }
+  .project_button{
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    width: 100%;
+  }
 
-    .head_menu_name{
-        margin-top: 0.8rem;
-        font-size: 1.1rem;
-        vertical-align: middle;
-    }
-    .menu {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        flex-direction: row;
-        padding: 0;
-        scale: 50%;
-        position: absolute;top: 0.4rem;
-        right: 12px;
-      }
-      .line {
-        fill: none;
-        stroke: #45FB83;
-        stroke-width: 6;
-        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-          stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-      .line1 {
-        stroke-dasharray: 60 207;
-        stroke-width: 6;
-      }
-      .line2 {
-        stroke-dasharray: 60 60;
-        stroke-width: 6;
-      }
-      .line3 {
-        stroke-dasharray: 60 207;
-        stroke-width: 6;
-      }
-      .opened .line1 {
-        stroke-dasharray: 90 207;
-        stroke-dashoffset: -134;
-        stroke-width: 6;
-      }
-      .opened .line2 {
-        stroke-dasharray: 1 60;
-        stroke-dashoffset: -30;
-        stroke-width: 6;
-      }
-      .opened .line3 {
-        stroke-dasharray: 90 207;
-        stroke-dashoffset: -134;
-        stroke-width: 6;
-      }
-        
-
-    .homeleft, .about, .prproject, .contact{
-        height: 55rem;
-        margin-left: 12%;
-        margin-right: 12%;
-        border-bottom: 0;
-        border-top: 0;
-        margin-top: 0%;
-        margin-bottom: 0%;
-        flex-direction: column;
-    } 
-    .home_text{
-        font-size: 2rem;
-        width: 100%;
-        margin-top: 8rem;
-        text-align: left;
-    }
-    .home_text_sub{
-        font-size: 1.1rem;
-        width: 80%;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
-        border-top:.1rem solid var(--madWhite);
-        border-bottom:.1rem solid var(--madWhite);
-        text-align: left;
-    }
-    .home_text_body{
-        font-size: 1rem;
-        width: 100%;
-        margin-top: 1rem;
-        text-align: left;
-    }
-    .home_button{
-        font-size: 0.9rem;
-        width: 100%;
-    }
-    .home{
-        background-position-y:15rem;
-        margin: 0;
-        height: 55rem;
-        background-image: 
-        linear-gradient(to bottom,
-        hsl(0, 0%, 0%),
-        hsla(0, 0%, 0%, 0.794),
-        hsla(0, 0%, 0%, 0.474),
-        hsla(0, 0%, 0%, 0.794),
-        hsl(0, 0%, 0%)),
-        url(img/designer.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .about{
-        height: 42rem;
-    }
-    .aboout_container{
-        margin: 0;
-    }
-    .about_title{
-        font-size: 1.2rem;
-    }
-    .about_text{
-        display: block;
-        font-size: 1.05rem;
-    }
-    .about_text_desktop{
-        display: none;
-    }
-    .about_button{
-        display: block;
-        font-size: 0.9rem;
-        width: 100%;
-    }
-    .about_icons{
-        display: block;
-    }
-
-    .prproject{
-        gap: 1rem;
-        margin-left: 12%;
-        margin-right: 12%;
-        height: 80rem;
-        grid-template-columns: 100%;
-    }
-    .projects{
-        margin: 0;
-        height:22rem;
-    }
-    .project_title{
-        font-size: 1.2rem;
-    }
-    .project_description{
-        font-size: 1.1rem;
-    }
-    .project_button{
-        font-size: 0.9rem;
-        margin-top: 2rem;
-        width: 100%;
-    }
-    .box h3{
-        font-size: 1.2rem;
-    }
-    .box a{
-        font-size: 1rem;
-    }
-    .box-container{
-        gap:0;
-    }
-    .box{
-        background: none;
-        padding:0.5rem;
-        border: 0;
-    }
-    .contact .credit{
-        margin-top:  2rem;
-        border-top: 0;
-    }
+  .box h3{
+    font-size: 1.2rem;
+  }
+  .box a{
+    font-size: 1rem;
+  }
+  .box-container{
+    gap:0;
+  }
+  .box{
+    background: none;
+    padding:0.5rem;
+    border: 0;
+  }
+  .contact .credit{
+    margin-top:  2rem;
+    border-top: 0;
+}
 }
 

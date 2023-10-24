@@ -1,13 +1,12 @@
+console.log("diobastarfdo");
 const DOM ={
     homebutton : document.querySelector('#homebutton'),
     aboutbutton : document.querySelector('#aboutbutton'),
-    homeaboutbutton : document.querySelector('#homeaboutbutton'),
     projectbutton : document.querySelector('#projectbutton'),
     contactbutton : document.querySelector('#contactbutton'),
-    home : document.querySelector('.home'),
 
     menubutton : document.querySelector('.menu'),
-    menubuttonclose : document.querySelector('.head_menu_icon_2'),
+
     menu : document.querySelector('.head_menu_mobile'),
     homebuttonmob : document.querySelector('#homebuttonmob'),
     aboutbuttonmob : document.querySelector('#aboutbuttonmob'),
@@ -46,13 +45,13 @@ DOM.homebuttonCO.addEventListener('click', homewithout);
 function aboutSectionF(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 600,
+            top : 580,
             left : 0,
             behavior: 'smooth'
           });
     } else {
         window.scrollTo( {
-            top : 840,
+            top : 700,
             left : 0,
             behavior: 'smooth'
           });
@@ -63,13 +62,13 @@ function aboutSectionF(){
 function aboutwithout(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 600,
+            top : 580,
             left : 0,
             behavior: 'smooth'
           });
     } else {
         window.scrollTo( {
-            top : 840,
+            top : 700,
             left : 0,
             behavior: 'smooth'
           });
@@ -79,13 +78,12 @@ function aboutwithout(){
 DOM.aboutbutton.addEventListener('click', aboutSectionF);  
 DOM.aboutbuttonmob.addEventListener('click', aboutSectionF);  
 DOM.aboutbuttonCO.addEventListener('click', aboutwithout);
-DOM.homeaboutbutton.addEventListener('click', aboutwithout);  
 
 
 function projectSectionF(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 1200,
+            top : 1180,
             left : 0,
             behavior: 'smooth'
           });
@@ -102,7 +100,7 @@ function projectSectionF(){
 function projectwithout(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 1200,
+            top : 1180,
             left : 0,
             behavior: 'smooth'
           });
@@ -122,13 +120,13 @@ DOM.projectbuttonCO.addEventListener('click', projectwithout);
 function contactSectionF(){
     if (window.innerWidth > 700) {
     window.scrollTo( {
-        top : 1800,
+        top : 1780,
         left : 0,
         behavior: 'smooth'
       });
     } else {
         window.scrollTo( {
-            top : 2850,
+            top : 2300,
             left : 0,
             behavior: 'smooth'
           });
@@ -139,13 +137,13 @@ function contactSectionF(){
 function contactwithout(){
     if (window.innerWidth > 700) {
     window.scrollTo( {
-        top : 1800,
+        top : 1780,
         left : 0,
         behavior: 'smooth'
       });
     } else {
         window.scrollTo( {
-            top : 2850,
+            top : 2320,
             left : 0,
             behavior: 'smooth'
           });

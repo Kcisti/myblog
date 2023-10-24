@@ -16,52 +16,27 @@
     <body>
       
         
-        <div class="head_menu">
-            <img class="head_menu_logo" src="logo/logo.svg">
-            <p class="head_menu_name">MarkHoary.</p>
-            <li><a class="head_menu_section" id="homebutton">Home</a></li> 
-            <li><a class="head_menu_section" id="aboutbutton">About</a></li> 
-            <li><a class="head_menu_section" id="projectbutton">Project</a></li> 
-            <li><a class="head_menu_section" id="contactbutton">Contact</a></li> 
-            
-            <button class="menu"  aria-label="Main Menu">
-                <svg width="100" height="100" viewBox="0 0 100 100">
-                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
-                  <path class="line line2" d="M 20,50 H 80" />
-                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
-                </svg>
-              </button>
-            
-        </div>
-        <div class="head_menu_mobile">
-            <li id="homebuttonmob"><a class="head_menu_section">Home</a></li> 
-            <li id="aboutbuttonmob"><a class="head_menu_section">About</a></li> 
-            <li id="projectbuttonmob"><a class="head_menu_section">Project</a></li> 
-            <li id="contactbuttonmob"><a class="head_menu_section">Contact</a></li> 
-        </div>
 
         <div class="home">
-            <div class="homeleft">
-                <p class="home_text">I'm Mark Hoary</p>
-                <p class="home_text_sub">ux/ui designer, front-end web developer, screenplays writer, ads communicator, photographer and videomaker</p>
-                <p class="home_text_body">
-                    I am a creative with a minimal mold, with excellent problem solving skills.
+            <div style="width: 100%">
+                <p class="home_text">
+                    I am a creative with a minimal mold and excellent problem solving skills. 
+                    I'm nineteen boy based in Italy.
                 </p>
-                <button class="home_button"id="homeaboutbutton">About me</button>
-            </div>
+                <div class="home_img"></div>
+                <p class="home_text_sub">
+                    ux/ui designer,
+                    front-end web developer, screenplays writer, 
+                    ads communicator, photographer and videomaker
+                </p>
+            </div>    
+        </div> 
 
-            
-        </div>
         <div class="about">
-            <div class="aboutcontainer">
-                <p class="about_title">About me</p>
-                <p class="about_text"> 
-                    I'm Mark Hoary, a graphic designer and front-end programmer,
-                    Creativity is what I need most in every area.
-                    During my career: I played various roles.
-                </p>
-                <p class="about_text_desktop" > 
-                    I'm Mark Hoary, a graphic designer and front-end programmer,
+            <div class="about_texts">
+                <p class="about_text">I'm Marco Filippelli</p>
+                <p class="about_text_sub"> 
+                    ...a graphic designer and front-end programmer,
                     Creativity is what I need most in every area.
                     <br>
                     <br>
@@ -73,64 +48,58 @@
                     The creativity is in fact what I have most in every field. 
                     I work by reflecting myself in every project that
                     I am assigned or that I decide to complete.
-                    <br>
+                </p>
+                <p class="about_text_subplus">
                     <br>
                     Throughout my career I have had multiple experiences in the fields of graphics,
                     photography, editing, advertising communication and creative writing.
                 </p>
+                <a href="MarcoFilippelli-CV.pdf" download>
                     <button class="about_button">Download CV</button>
-                <p class="about_text" style="margin-top: 2rem;
-                margin-bottom: 2rem;
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-                border-top:.1rem solid var(--madWhite);
-                border-bottom:.1rem solid var(--madWhite);">
-                    I took care of editing, writing and visual design.
-                </p>
-                <p class="about_text_desktop" style="margin-top: 2rem;
-                margin-bottom: 2rem;
-                padding-top: 1.5rem;
-                padding-bottom: 1.5rem;
-                border-top:.1rem solid var(--madWhite);
-                border-bottom:.1rem solid var(--madWhite);">
-                    "I know of no better purpose in life than to perish
-                    in the attempt to achieve the great and the impossible" cit.Nietzsche
-                </p>
+                </a>
             </div>
-            <div class="aboutcontainericons">
-                <ion-icon name="logo-html5" class="about_icons"></ion-icon>
-                <ion-icon name="logo-css3" class="about_icons"></ion-icon>
-                <ion-icon name="logo-javascript" class="about_icons"></ion-icon>
-            </div>
-            
+            <div class="about_img"></div>
         </div>
-        <div class="prproject">
-            <div class="projects" style="background-image:linear-gradient(to bottom,hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) , url(img/murkyroom.jpg);">
+
+        <div class="projects">
+            <div class="project" style="background-image:linear-gradient(to bottom,
+            hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) )
+             , url(img/murkyroom.jpg);">
                 <a class="project_title">
                     Murky Room
                 </a>
                 <p class="project_description">
-                    A space dedicated to group chats, in comfort from the browser.      
+                    A space dedicated to group chats, on browser.      
                 </p>
-                <button class="project_button" href="https://kcisti.github.io/ROOM/">view more</button>    
+                <a href="https://kcisti.github.io/ROOM/">
+                    <button class="project_button">view more</button> 
+                </a>   
             </div>
-            <div class="projects" style="background-image:linear-gradient(to bottom,hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) , url(img/Userslocator.jpg);">
+            <div class="project" style="background-image:linear-gradient(to bottom,
+            hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) ,
+             url(img/Userslocator.jpg);">
                 <a class="project_title">
                     Users Locator
                 </a>
                 <p class="project_description">
                     A GPS tracker for mobile devices, very quick to use.
                 </p>
-                <button class="project_button" href="https://kcisti.github.io/locatortry/">view more</button>
+                <a href="https://kcisti.github.io/locatortry/">
+                    <button class="project_button">view more</button>
+                </a>
             </div>
-            <div class="projects" style="background-image:linear-gradient(to bottom,hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) , url(img/vocalassistant.jpg);">
+            <div class="project" style="background-image:linear-gradient(to bottom,
+             hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) ,
+              url(img/vocalassistant.jpg);">
                 <a class="project_title">
                     Vocal Assistant
                 </a>
                 <p class="project_description">
                     A simple interactive voice assistant project. 
                 </p>
-                <button class="project_button" href="https://kcisti.github.io/RO">view more</button>
+                <a href="https://kcisti.github.io/ROOM/">
+                    <button class="project_button">view more</button>
+                </a>
             </div>
         </div>
 
@@ -173,9 +142,31 @@
                 </div>
             </div>
             <div class="credit">created by
-                <a target="_blank"><span>MarkHoary.</span></a>
+                <a target="_blank"><span>MarcoFilippelli.</span></a>
             </div>
+        </div>
 
+        <div class="head_menu">
+            <p class="head_menu_name">MarcoFilippelli.</p>
+            <li><a class="head_menu_section" id="homebutton">Home</a></li> 
+            <li><a class="head_menu_section" id="aboutbutton">About</a></li> 
+            <li><a class="head_menu_section" id="projectbutton">Project</a></li> 
+            <li><a class="head_menu_section" id="contactbutton">Contact</a></li> 
+            
+            <button class="menu"  aria-label="Main Menu">
+                <svg width="100" height="100" viewBox="0 0 100 100">
+                  <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997, 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>   
+        </div>
+
+        <div class="head_menu_mobile">
+            <li id="homebuttonmob"><a class="head_menu_section">Home</a></li> 
+            <li id="aboutbuttonmob"><a class="head_menu_section">About</a></li> 
+            <li id="projectbuttonmob"><a class="head_menu_section">Project</a></li> 
+            <li id="contactbuttonmob"><a class="head_menu_section">Contact</a></li> 
         </div>
 
     </body>
