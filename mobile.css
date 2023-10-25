@@ -20,7 +20,7 @@
   }
   .head_menu_mobile li{
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style: none;
     padding: 1.1rem;
     text-transform: uppercase;
@@ -110,13 +110,14 @@
     font-size: 1.6rem ;
   }
   .home_img{
-    height: 18rem;
+    height: 15rem;
   }
 
   .about_texts{
     width: 100%;
     text-align: center;
     line-height: 1.9rem;
+    margin-top: 1rem;
   }
   .about_text{
     display:none

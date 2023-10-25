@@ -89,7 +89,7 @@ function projectSectionF(){
           });
     } else {
         window.scrollTo( {
-            top : 1550,
+            top : 1500,
             left : 0,
             behavior: 'smooth'
           });
@@ -106,7 +106,7 @@ function projectwithout(){
           });
     } else {
         window.scrollTo( {
-            top : 1550,
+            top : 1500,
             left : 0,
             behavior: 'smooth'
           });
@@ -126,7 +126,7 @@ function contactSectionF(){
       });
     } else {
         window.scrollTo( {
-            top : 2300,
+            top : 2350,
             left : 0,
             behavior: 'smooth'
           });
@@ -143,7 +143,7 @@ function contactwithout(){
       });
     } else {
         window.scrollTo( {
-            top : 2320,
+            top : 2350,
             left : 0,
             behavior: 'smooth'
           });
