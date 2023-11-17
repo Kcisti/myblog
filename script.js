@@ -45,7 +45,7 @@ DOM.homebuttonCO.addEventListener('click', homewithout);
 function aboutSectionF(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 580,
+            top : 700,
             left : 0,
             behavior: 'smooth'
           });
@@ -62,7 +62,7 @@ function aboutSectionF(){
 function aboutwithout(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 580,
+            top : 700,
             left : 0,
             behavior: 'smooth'
           });
@@ -83,13 +83,13 @@ DOM.aboutbuttonCO.addEventListener('click', aboutwithout);
 function projectSectionF(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 1180,
+            top : 1530,
             left : 0,
             behavior: 'smooth'
           });
     } else {
         window.scrollTo( {
-            top : 1500,
+            top : 1530,
             left : 0,
             behavior: 'smooth'
           });
@@ -100,13 +100,13 @@ function projectSectionF(){
 function projectwithout(){
     if (window.innerWidth > 700) {
         window.scrollTo( {
-            top : 1180,
+            top : 1530,
             left : 0,
             behavior: 'smooth'
           });
     } else {
         window.scrollTo( {
-            top : 1500,
+            top : 1530,
             left : 0,
             behavior: 'smooth'
           });
@@ -120,13 +120,13 @@ DOM.projectbuttonCO.addEventListener('click', projectwithout);
 function contactSectionF(){
     if (window.innerWidth > 700) {
     window.scrollTo( {
-        top : 1780,
+        top : 2200,
         left : 0,
         behavior: 'smooth'
       });
     } else {
         window.scrollTo( {
-            top : 2350,
+            top : 3200,
             left : 0,
             behavior: 'smooth'
           });
@@ -137,13 +137,13 @@ function contactSectionF(){
 function contactwithout(){
     if (window.innerWidth > 700) {
     window.scrollTo( {
-        top : 1780,
+        top : 2200,
         left : 0,
         behavior: 'smooth'
       });
     } else {
         window.scrollTo( {
-            top : 2350,
+            top : 3200,
             left : 0,
             behavior: 'smooth'
           });

@@ -11,9 +11,9 @@
     font-weight: 600;
 }
 :root{
-    --secondcolor : hsl(0, 0%, 0%);
+    --secondcolor : hsl(240, 7%, 11%);
     --maincolor : hsl(0, 0%, 87%);
-    --thirdcolor : hsl(0, 0%, 41%);
+    --thirdcolor : hsla(0, 0%, 0%, 0.681);
 }
   
 body{
@@ -21,26 +21,21 @@ body{
     overflow: auto;
 }
 body::-webkit-scrollbar{
-  width: 5px;
-  background-color: none;
-}
-body::-webkit-scrollbar-thumb{
-  width: 5px;
-  background-color: var(--maincolor);
+  width: 0px;
 }
 
 
 .head_menu{
     position: fixed; top:0px;
-    left: 14%;
-    right: 14%;
+    left: 0;right: 0;
     display: flex; 
     justify-content: space-around;
     cursor: pointer;
     font-size: 0.9rem;
     color: var(--secondcolor);
-    padding-top: 1.563rem;
-    padding-bottom: 1.563rem;
+    padding: 1.563rem;
+    padding-left: 10%;
+    padding-right: 10%;
     background: var(--maincolor);
     height: 2rem;
 }
@@ -69,30 +64,28 @@ body::-webkit-scrollbar-thumb{
 
 
 .home{
-    height: 35rem;
-    margin-left: 14%;
-    margin-right: 14%;
+    height: 45rem;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: row;
     text-align: center;
 }
 .home_text{
-    margin-top: 6rem;
-    font-size: 2.2rem;
+    margin-top: 8rem;
+    font-size: 2.8rem;
     font-weight: 600;
     width: 100%;
     color: var(--secondcolor);
     padding-bottom: 1rem;
 }
 .home_text_sub{
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     font-size: 0.7rem;
     font-weight: lighter;
     width: 100%;
     color: var(--secondcolor );
     text-transform: uppercase;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
 }
 .home_img{
     background-image:linear-gradient(to bottom,
@@ -104,86 +97,104 @@ body::-webkit-scrollbar-thumb{
      url(img/designer.jpg);
     background-size: cover;
     width: 100%;
-    height: 14rem;
+    height: 20rem;
     margin-top: 1.4rem;
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 }
-
 
 .about{
-    height: 38rem;
-    margin-left: 14%;
-    margin-right: 14%;
+    height: 45rem;
+    padding-left: 10%;
+    padding-right: 10%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    background-color: var(--secondcolor);
+    background-image:linear-gradient(to bottom,
+    hsla(0, 0%, 0%, 0.929),
+    hsla(0, 0%, 0%, 0.768),
+    hsla(0, 0%, 0%, 0.753),
+    hsla(0, 0%, 0%, 0.768),
+    hsla(0, 0%, 0%, 0.929)),
+     url(img/about.jpg);
+    background-size: cover;
 }
-.about_texts{
-    color: var(--secondcolor);
+#about_texts{
+    margin-top: 4rem;
+    width: 38%;
+    color: var(--maincolor);
     font-size: 0.8rem;
-    width: 50%;
+    padding: 1rem;
+    text-align: right;
+    border-right: .1rem solid var(--maincolor);
 }
-.about_text{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-.about_text_sub{
-    width: 80%;
-}
-.about_text_subplus{
-    width: 80%;
-    display: none;
+.about_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 .about_button{
-    color: var(--maincolor);
+    color: var(--secondcolor);
     font-size: 0.8rem;
     width: 80%;
     outline: none;
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--secondcolor);
+    background-color: var(--maincolor);
     padding: 1rem;
     margin-top: 2rem;
 }
-.about_img{
-    background-image:linear-gradient(to bottom,
-    hsla(0, 0%, 0%, 0.794),
-    hsla(0, 0%, 0%, 0.444),
-    hsla(0, 0%, 0%, 0.204),
-    hsla(0, 0%, 0%, 0.444),
-    hsla(0, 0%, 0%, 0.794)),
-    url(img/me.PG);
-    background-size: cover;
-    width: 25rem;
-    height: 25rem;
-    margin-top: 1.4rem;
+.about_posts{
+    width: 40%;
+    height: 28rem;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.about_posts::-webkit-scrollbar{
+    width: 0px;
+}
+.about_post{
+    width: 90%;
+    height:8rem;
+    background-color: hsla(240, 7%, 11%, 0.762);
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
+
+    color: var(--maincolor);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.about_post_text{
+    width: 90%;
 }
 
-
 .projects{
-    height:  38rem;
-    margin-left: 14%;
-    margin-right: 14%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    height:  45rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
 }
 
 .project{
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     padding: 1rem;
     background-size: cover;
-    height: 24rem;
+    margin: 1.5rem;
     text-align: center;
-    width:24%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    -webkit-box-shadow: 0px 0px 11px -2px #000000; 
+    box-shadow: 0px 0px 11px -2px #000000;
 }
 
 .project_title{
@@ -212,17 +223,16 @@ body::-webkit-scrollbar-thumb{
     text-transform: uppercase;
 }
 
-
 .contact{
-    height:  37.5rem;
-    margin-left: 14%;
-    margin-right: 14%;
+    height:  30rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--secondcolor);
     
 }
 .box-container{
     margin-left: 2%;
     margin-right: 2%;
-    margin-top: 6.25rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     gap:1.5rem;
@@ -231,19 +241,19 @@ body::-webkit-scrollbar-thumb{
 }
 .box{
     border-radius: 0.2rem;
-    background-color: var(--maincolor);
     padding: 2rem;
+    margin-top: 3rem;
 }
 .box h3{
-    font-size: 1rem;
-    color:var(--secondcolor);
+    font-size: 0.8rem;
+    color:var(--maincolor);
     padding: 1rem 0;
     font-weight: medium;
 }
 .box a{
     display: block;
-    font-size: 0.813rem;
-    color:var(--secondcolor);
+    font-size: 0.7rem;
+    color:var(--maincolor);
     padding: 0.625rem 0;
     text-decoration: none;
     overflow: hidden;
@@ -262,10 +272,7 @@ body::-webkit-scrollbar-thumb{
     margin-top: 6.25rem;
     text-align: center;
     font-size: 15px;
-    color: var(--secondcolor);
-}
-.contact .credit span{
-    color: var(--secondcolor);
+    color: var(--maincolor);
     cursor: pointer;
 }
 

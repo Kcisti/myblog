@@ -34,7 +34,9 @@
   .head_menu{
     height: 3rem;
     left: 0px;right: 0px;
-    padding: 12%;
+    padding: 0px;
+    padding-left: 12%;
+    padding-right: 12%;
     padding-top: 2rem;
     padding-bottom: 1.2rem;
   }
@@ -92,19 +94,17 @@
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
-  .home ,.about , .projects, .contact{
-    height: 50rem;
-    margin-left: 12%;
-    margin-right: 12%;
-    border-bottom: 0;
-    border-top: 0;
+  .home , .about , .project , .contact {
+    margin-left: 14%;
+    margin-right: 14%;
+    padding-left: 0;
+    padding-right: 0;
     margin-top: 0%;
     margin-bottom: 0%;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
   }
-
   .home_text{
     margin-top: 8rem;
     font-size: 1.6rem ;
@@ -112,72 +112,64 @@
   .home_img{
     height: 15rem;
   }
-
-  .about_texts{
-    width: 100%;
-    text-align: center;
-    line-height: 1.9rem;
-    margin-top: 1rem;
-  }
-  .about_text{
-    display:none
-  }
-  .about_text_sub{
-    width: 100%;
-  }
-  .about_text_subplus{
-    display: block;
-    width: 100%;
-  }
-  .about_button{
-    width: 100%;
-    font-size: 0.9;
-    padding: 1rem;
-  }
-  .about_img{
-    width: 100%;
-    height: 12rem;
+  .home_text_sub{
     display: none;
   }
 
+  .about{
+    margin-left: 0; margin-right: 0;
+    padding-left: 14%; padding-right: 14%;
+  }
+  #about_texts{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    width: 100%;
+    text-align: left;
+    border-right: 0;
+  }
+  .about_title{
+    font-size: 1rem;
+  }
+  .about_button{
+    width: 100%;
+  }
+  .about_posts{
+    display: none;
+  }
+  
   .projects{
+    height:75rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .project{
-    width: 98%;
-    height:18rem;
-    margin-top: 2rem;
-  }
-  .project_title{
-    font-size: 1rem;
-  }
-  .project_description{
-    font-size: 0.8rem;
-  }
-  .project_button{
-    font-size: 0.9rem;
-    margin-top: 2rem;
     width: 100%;
+    justify-content: center;
+    padding: 1rem;
   }
 
+  .contact{
+    margin-left: 0; margin-right: 0;
+    padding-left: 14%; padding-right: 14%;
+    height: 90rem;
+  }
+  .box-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap:0;
+  }
+  .box{
+    margin-top: 0;
+    padding: 1rem;
+  }
   .box h3{
     font-size: 1rem;
   }
   .box a{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
-  .box-container{
-    gap:0;
-  }
-  .box{
-    background: none;
-    padding:0.5rem;
-    border: 0;
-  }
-  .contact .credit{
-    margin-top:  2rem;
-    border-top: 0;
-    font-size: 0.8rem;
-}
 }
 

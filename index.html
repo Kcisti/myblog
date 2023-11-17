@@ -3,14 +3,12 @@
     <head>
       <title>MarcoFilippelli.</title>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="style.css"/>
       <link rel="stylesheet" href="mobile.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
@@ -18,7 +16,7 @@
         
 
         <div class="home">
-            <div style="width: 100%">
+            <div>
                 <p class="home_text">
                     I am a creative with a minimal mold and excellent problem solving skills. 
                     I'm nineteen boy based in Italy.
@@ -33,9 +31,9 @@
         </div> 
 
         <div class="about">
-            <div class="about_texts">
-                <p class="about_text">I'm Marco Filippelli</p>
-                <p class="about_text_sub"> 
+            <div id="about_texts" class="animate__animated animate__fadeInRight">
+                <p class="about_title">i'm marco filippelli</p>
+                <p class="about_text"> 
                     ...a graphic designer and front-end programmer,
                     Creativity is what I need most in every area.
                     <br>
@@ -48,8 +46,7 @@
                     The creativity is in fact what I have most in every field. 
                     I work by reflecting myself in every project that
                     I am assigned or that I decide to complete.
-                </p>
-                <p class="about_text_subplus">
+                    <br>
                     <br>
                     Throughout my career I have had multiple experiences in the fields of graphics,
                     photography, editing, advertising communication and creative writing.
@@ -58,8 +55,35 @@
                     <button class="about_button">Download CV</button>
                 </a>
             </div>
-            <div class="about_img"></div>
-        </div>
+            <div class="about_posts">
+                <div class="about_post">
+                    <p class="about_post_text">
+                        I know of no better life purpose then to
+                        perish in the attempt to accomplish the great and the impossible
+                    </p>
+                </div>
+                <div class="about_post">
+                    <p class="about_post_text">
+                        rare things to the rare
+                    </p>
+                </div>
+                <div class="about_post">
+                    <p class="about_post_text">
+                        success doesn't just come from winning but also from the desire to win
+                    </p>
+                </div>
+                <div class="about_post">
+                    <p class="about_post_text">
+                        the worst enemy you can encounter will always be you for yourself
+                    </p>
+                </div>
+                <div class="about_post">
+                    <p class="about_post_text">
+                        he who knows all the answers hasn't asked himself all the questions
+                    </p>
+                </div>
+            </div>
+        </div> 
 
         <div class="projects">
             <div class="project" style="background-image:linear-gradient(to bottom,
@@ -101,6 +125,45 @@
                     <button class="project_button">view more</button>
                 </a>
             </div>
+            <div class="project" style="background-image:linear-gradient(to bottom,
+            hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) ,
+             url(img/Userslocator.jpg);">
+                <a class="project_title">
+                    Users Locator
+                </a>
+                <p class="project_description">
+                    A GPS tracker for mobile devices, very quick to use.
+                </p>
+                <a href="https://kcisti.github.io/locatortry/">
+                    <button class="project_button">view more</button>
+                </a>
+            </div>
+            <div class="project" style="background-image:linear-gradient(to bottom,
+             hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) ,
+              url(img/vocalassistant.jpg);">
+                <a class="project_title">
+                    Vocal Assistant
+                </a>
+                <p class="project_description">
+                    A simple interactive voice assistant project. 
+                </p>
+                <a href="https://kcisti.github.io/ROOM/">
+                    <button class="project_button">view more</button>
+                </a>
+            </div>
+            <div class="project" style="background-image:linear-gradient(to bottom,
+             hsla(240, 1%, 27%, 0),hsla(240, 1%, 27%, 0.794),hsla(240, 1%, 27%, 0.966) ) ,
+              url(img/vocalassistant.jpg);">
+                <a class="project_title">
+                    Vocal Assistant
+                </a>
+                <p class="project_description">
+                    A simple interactive voice assistant project. 
+                </p>
+                <a href="https://kcisti.github.io/ROOM/">
+                    <button class="project_button">view more</button>
+                </a>
+            </div>
         </div>
 
         <div class="contact">
@@ -112,11 +175,8 @@
                     <a id="projectCO" ><i class="fas fa-chevron-right"></i>Project</a>
                     <a id="contactCO" ><i class="fas fa-chevron-right"></i>Contact</a>
                  </div>
-                 
-                 
                  <div class="box">
                      <h3>Other projects</h3>
-                     <a href="https://kcisti.github.io//"><i class="fas fa-chevron-right"></i>Identity generator</a>
                      <a href="https://kcisti.github.io//"><i class="fas fa-chevron-right"></i>Calculator</a>
                      <a href="https://kcisti.github.io//"><i class="fas fa-chevron-right"></i>FCG studio site</a>
                      <a href="https://kcisti.github.io//"><i class="fas fa-chevron-right"></i>Videocall room</a>
@@ -126,23 +186,28 @@
                     <h3>Contact info</h3>
                     <a href="tel:+39 349 668 90"><i class="fas fa-phone"></i>+39 349 668 90</a>
                     <a href="mailto:marco.filippelli25@gmail.com">
-                     <i class="fas fa-envelope"></i>MarkHoary - gmail.com</a>
+                     <i class="fas fa-envelope"></i>MarcoFilippelli - gmail.com</a>
                     <a href="https://www.google.com/maps/place/Torino+TO/data=!4m2!3m
                     1!1s0x47886d126418be25:0x8903f803d69c77bf?utm_source=mstt_1&entry=gps&
                     g_ep=CAESCTExLjQ4LjgwMRgAIP___________wEqAA%3D%3D">
                     <i class="fas fa-map-marker-alt"></i>Turin, Italy - 10155</a>
                 </div>
                 <div class="box">
-                    <h3>Follow us</h3>
+                    <h3>Follow me</h3>
                     <a href="#https://www.facebook.com/kcisti"><i class="fab fa-facebook-f"></i>facebook</a>
                     <a href="https://twitter.com/kcisti"><i class="fab fa-twitter"></i>twitter</a>
                     <a href="https://www.instagram.com/kcisti/"><i class="fab fa-instagram"></i>instagram</a>
                     <a href="https://github.com/Kcisti"><i class="fab fa-github"></i>github</a>
-                    <a href="#https://pin.it/53mO3MB"><i class="fab fa-pinterest"></i>pinterest</a>
                 </div>
+                <div class="box" >
+                    <h3>faq</h3>
+                    <a id="" ><i class="fas fa-chevron-right"></i>where do you live?</a>
+                    <a id="" ><i class="fas fa-chevron-right"></i>how can i work with you?</a>
+                    <a id="" ><i class="fas fa-chevron-right"></i>how can i contact you?</a>
+                    <a id="" ><i class="fas fa-chevron-right"></i>what am i signing up for?</a>
+                 </div>
             </div>
-            <div class="credit">created by
-                <a target="_blank"><span>MarcoFilippelli.</span></a>
+            <div class="credit">created by MarcoFilippelli.</a>
             </div>
         </div>
 
