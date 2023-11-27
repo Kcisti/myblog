@@ -11,9 +11,9 @@
     font-weight: 600;
 }
 :root{
-    --secondcolor : hsl(240, 7%, 11%);
+    --secondcolor : hsl(0, 0%, 0%);
     --maincolor : hsl(0, 0%, 87%);
-    --thirdcolor : hsla(0, 0%, 0%, 0.681);
+    --thirdcolor : hsl(0, 0%, 9%);
 }
   
 body{
@@ -125,9 +125,9 @@ body::-webkit-scrollbar{
     width: 38%;
     color: var(--maincolor);
     font-size: 0.8rem;
-    padding: 1rem;
-    text-align: right;
-    border-right: .1rem solid var(--maincolor);
+    padding: 3rem;
+    text-align: left;
+    border-left: .1rem solid var(--maincolor);
 }
 .about_title{
     font-size: 1.5rem;
@@ -149,7 +149,7 @@ body::-webkit-scrollbar{
     width: 40%;
     height: 28rem;
     margin-top: 4rem;
-    margin-left: 6rem;
+    margin-right: 4rem;
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -163,14 +163,14 @@ body::-webkit-scrollbar{
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 0.5rem;
-
     color: var(--maincolor);
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     display: flex;
     align-items: center;
     padding-left: 2rem;
 }
 .about_post_text{
+    font-weight: normal;
     width: 90%;
 }
 
@@ -215,7 +215,7 @@ body::-webkit-scrollbar{
     color: var(--maincolor);
     font-size: 0.688rem;
     padding:1rem;
-    min-width: 100%;
+    width: 100%;
     border-radius: 0.5rem;
     background-color: var(--secondcolor);
     border: 0;

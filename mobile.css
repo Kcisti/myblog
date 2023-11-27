@@ -1,3 +1,69 @@
+@media screen and (max-width: 1280px){
+  .contact{
+    padding-top: 3rem;
+    height: max-content;
+  }
+  .box-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .box a{
+    display: none;
+  }
+  .box h3{
+    color: var(--secondcolor);
+  }
+  .box{
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondcolor);
+    font-size: 0.8rem;
+    padding:1rem;
+    min-width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--maincolor);
+    border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+  }
+  .contact .credit{
+    margin-top: 2rem;
+  }
+
+  .contact{
+    margin-left: 0; margin-right: 0;
+    padding-left: 14%; padding-right: 14%;
+  }
+  .box-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+  }
+  .box{
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondcolor);
+    font-size: 0.8rem;
+    padding:0;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--maincolor);
+    border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
+  }
+  .box h3{
+    color: var(--secondcolor);
+  }
+}
+
+
 @media screen and (max-width: 875px){
   .head_menu li{
     display: none;
@@ -15,7 +81,7 @@
     width: 70%;
     color: var(--maincolor);
     background-color: var(--secondcolor);
-    border-radius: 0.8rem;
+    border-radius: 0.5rem;
     opacity: 98%;
   }
   .head_menu_mobile li{
@@ -107,10 +173,10 @@
   }
   .home_text{
     margin-top: 8rem;
-    font-size: 1.6rem ;
+    font-size: 1.8rem ;
   }
   .home_img{
-    height: 15rem;
+    height: 10rem;
   }
   .home_text_sub{
     display: none;
@@ -125,7 +191,7 @@
     font-size: 0.9rem;
     width: 100%;
     text-align: left;
-    border-right: 0;
+    border-left: 0;
   }
   .about_title{
     font-size: 1rem;
@@ -138,7 +204,7 @@
   }
   
   .projects{
-    height:75rem;
+    height:34rem;
     padding-top: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -149,27 +215,39 @@
     justify-content: center;
     padding: 1rem;
   }
+  .project a{
+    width: 100%;
+  }
+  #project4 , #project5 , #project6{
+    display: none;
+  }
 
   .contact{
     margin-left: 0; margin-right: 0;
     padding-left: 14%; padding-right: 14%;
-    height: 90rem;
   }
   .box-container{
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
+    align-items: center;
     gap:0;
   }
   .box{
-    margin-top: 0;
-    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    color: var(--secondcolor);
+    font-size: 0.8rem;
+    padding:0;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--maincolor);
+    border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0.8rem;
   }
   .box h3{
-    font-size: 1rem;
-  }
-  .box a{
-    font-size: 0.9rem;
+    color: var(--secondcolor);
   }
 }
-

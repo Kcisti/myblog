@@ -89,7 +89,7 @@ function projectSectionF(){
           });
     } else {
         window.scrollTo( {
-            top : 1530,
+            top : 1360,
             left : 0,
             behavior: 'smooth'
           });
@@ -106,7 +106,7 @@ function projectwithout(){
           });
     } else {
         window.scrollTo( {
-            top : 1530,
+            top : 1360,
             left : 0,
             behavior: 'smooth'
           });
